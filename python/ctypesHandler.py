@@ -14,6 +14,6 @@ LIB_EXTENSION = {"POSIX":".so", "WIN":".dll"}
 
 def libFullPath(filename: str):
     if os.name == "nt":
-        return Path(f"{LIB_PATH}{filename}{LIB_EXTENSION["WIN"]}").absolute()
+        return Path(f"{LIB_PATH}{filename}{LIB_EXTENSION['WIN']}").absolute()
     else:
-        return Path(f"{LIB_PATH}{filename}{LIB_EXTENSION["POSIX"]}").absolute()
+        return Path(f"{LIB_PATH}{filename}{LIB_EXTENSION['POSIX']}").absolute()
