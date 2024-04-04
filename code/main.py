@@ -1,9 +1,10 @@
-from python.ctypesHandler import loadLib, libFullPath, LIB_PATH
-from pathlib import Path
+from python.cLibrariesHandler import loadLib, libFullPath
 
 if __name__ == '__main__':
-    libname = "example"
-    a = libFullPath(libname)
-    cFunctions = loadLib(a)
-    print(cFunctions.add(5,76))
+
+    libPath = libFullPath("example")
+    cFunctions = loadLib(libPath)
+
+    print(cFunctions.add(2, 2))
+    print(cFunctions.substract(10, 2))
 

@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="corrected quotes">
-      <change beforePath="$PROJECT_DIR$/cpp/lib/example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/lib/example.so" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ctypesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/python/ctypesHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/compileC.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helper/scripts/compileC.sh" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Remade file structure">
+      <change beforePath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/cpp/lib/example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/python/ctypesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/python/cLibrariesHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/scripts/compileC.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +29,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Niepper"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Niepper&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -60,7 +62,8 @@
     "Shell Script.CompileC.executor": "Run",
     "Shell Script.compileC.sh.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/niepper/games/pytong/PycharmProjects/GeneratorHTML/main.py"
+    "last_opened_file_path": "/home/niepper/games/pytong/PycharmProjects/GeneratorHTML/helper/scripts/compileC.sh",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -82,7 +85,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (GeneratorHTML)" />
+      <option name="SDK_NAME" value="Python 3.12 (GeneratorHTML) (2)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -99,10 +102,10 @@
     <configuration name="CompileC" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/scripts/compileC.sh" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/helpers/scripts" />
       <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
       <option name="INTERPRETER_PATH" value="/bin/zsh" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712241936643</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Remade file structure">
+      <option name="closed" value="true" />
+      <created>1712248593066</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712248593067</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +199,7 @@
     <MESSAGE value="Now script compiles to windows on linux" />
     <MESSAGE value="Finished example" />
     <MESSAGE value="corrected quotes" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected quotes" />
+    <MESSAGE value="Remade file structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remade file structure" />
   </component>
 </project>

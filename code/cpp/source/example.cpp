@@ -1,16 +1,19 @@
 #include <iostream>
-#ifdef _WIN32
-#define EXPORT __declspec(dllexport)
-#else
-#define EXPORT
-#endif
 
+#ifdef _WIN32
+#define def __declspec(dllexport)
+#else
+#define def
+#endif
 
 
 extern "C"
 {
-    EXPORT int add(int a, int b){
-        return a + b;
+    def int add(int a, int b){
+        return (a + b);
+    }
+    def int substract(int a, int b){
+        return (a - b);
     }
 
 }
