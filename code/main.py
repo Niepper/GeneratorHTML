@@ -1,4 +1,4 @@
-from python.cLibrariesHandler import loadLib, libFullPath, cArray
+from handlers.cLibrariesHandler import loadLib, libFullPath, cArray
 
 if __name__ == '__main__':
     # Zdobycie ścieżki do biblioteki
