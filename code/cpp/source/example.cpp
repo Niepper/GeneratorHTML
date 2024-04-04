@@ -6,14 +6,16 @@
 #define def
 #endif
 
-
 extern "C"
 {
     def int add(int a, int b){
         return (a + b);
     }
-    def int substract(int a, int b){
-        return (a - b);
+
+    def void subtractArrays(int* a, int* b, int size){
+        for(int i = 0; i < size; i++){
+            a[i] -= b[i];
+        }
     }
 
 }
