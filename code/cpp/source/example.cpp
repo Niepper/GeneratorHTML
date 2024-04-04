@@ -1,5 +1,5 @@
 #include <iostream>
-
+/* Dodaje flagę wymaganą do kompilacji jako plik .dll dla rodziny systemów Windows*/
 #ifdef _WIN32
 #define def __declspec(dllexport)
 #else
@@ -8,6 +8,7 @@
 
 extern "C"
 {
+
     def int add(int a, int b){
         return (a + b);
     }

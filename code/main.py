@@ -1,7 +1,9 @@
 from python.cLibrariesHandler import loadLib, libFullPath, cArray
 
 if __name__ == '__main__':
+    # Zdobycie ścieżki do biblioteki
     libPath = libFullPath("example")
+
     cFunctions = loadLib(libPath)
 
     print(cFunctions.add(2, 2))
@@ -11,6 +13,7 @@ if __name__ == '__main__':
 
     a_c = cArray(a)
     b_c = cArray(b)
+
     cFunctions.subtractArrays(a_c, b_c, len(a))
 
     print(list(a_c))
