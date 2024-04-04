@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Finished example">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ctypesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ctypesHandler.py" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="corrected quotes">
+      <change beforePath="$PROJECT_DIR$/cpp/lib/example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/lib/example.so" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/ctypesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/python/ctypesHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/compileC.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helper/scripts/compileC.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Niepper"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="22a71d1e-9ba4-45f0-80b4-746b361fe6b4" />
+        <option name="url" value="https://github.com/Niepper/GeneratorHTML.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -47,9 +65,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code" />
+      <recent name="$PROJECT_DIR$/helper" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/cpp/lib" />
       <recent name="$PROJECT_DIR$/cpp/source" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Main">
@@ -67,7 +87,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,13 +164,30 @@
       <option name="project" value="LOCAL" />
       <updated>1712241071101</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="corrected quotes">
+      <option name="closed" value="true" />
+      <created>1712241920362</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712241920362</updated>
+    </task>
+    <task id="LOCAL-00006" summary="corrected quotes">
+      <option name="closed" value="true" />
+      <created>1712241936643</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712241936643</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Now script compiles to windows on linux" />
     <MESSAGE value="Finished example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished example" />
+    <MESSAGE value="corrected quotes" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected quotes" />
   </component>
 </project>
