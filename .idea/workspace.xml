@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Remade file structure">
-      <change beforePath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="renamed folder (python -&gt; handlers)">
+      <change afterPath="$PROJECT_DIR$/code/classes/person.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/handlers/csvHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC SMALL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/cpp/lib/example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/python/ctypesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/python/cLibrariesHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper/scripts/compileC.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +32,17 @@
     &quot;assignee&quot;: &quot;Niepper&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="22a71d1e-9ba4-45f0-80b4-746b361fe6b4" />
-        <option name="url" value="https://github.com/Niepper/GeneratorHTML.git" />
-      </UrlAndAccount>
-    </option>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Niepper/GeneratorHTML.git&quot;,
+    &quot;accountId&quot;: &quot;22a71d1e-9ba4-45f0-80b4-746b361fe6b4&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -56,17 +57,22 @@
   "keyToString": {
     "Batch.compileC.executor": "Run",
     "Python.Main.executor": "Run",
+    "Python.csvHandler.executor": "Run",
+    "Python.person.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Shell Script.CompileC.executor": "Run",
     "Shell Script.compileC.sh.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/niepper/games/pytong/PycharmProjects/GeneratorHTML/helper/scripts/compileC.sh",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
+    "last_opened_file_path": "/home/niepper/games/pytong/PycharmProjects/GeneratorHTML/code/website/exported",
+    "settings.editor.selected.configurable": "preferences.rainbow.brackets.indent"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/website/exported" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code" />
       <recent name="$PROJECT_DIR$/helper" />
@@ -75,7 +81,7 @@
       <recent name="$PROJECT_DIR$/cpp/source" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
       <module name="GeneratorHTML" />
       <option name="ENV_FILES" value="" />
@@ -122,7 +128,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
@@ -191,8 +197,51 @@
       <option name="project" value="LOCAL" />
       <updated>1712248593067</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Organized files' inside structure">
+      <option name="closed" value="true" />
+      <created>1712251419434</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712251419434</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added additional example">
+      <option name="closed" value="true" />
+      <created>1712255901145</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712255901145</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added comments">
+      <option name="closed" value="true" />
+      <created>1712257816046</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712257816046</updated>
+    </task>
+    <task id="LOCAL-00011" summary="renamed folder (python -&gt; handlers)">
+      <option name="closed" value="true" />
+      <created>1712265929688</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712265929688</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
@@ -200,6 +249,17 @@
     <MESSAGE value="Finished example" />
     <MESSAGE value="corrected quotes" />
     <MESSAGE value="Remade file structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remade file structure" />
+    <MESSAGE value="Organized files' inside structure" />
+    <MESSAGE value="Added additional example" />
+    <MESSAGE value="Added comments" />
+    <MESSAGE value="renamed folder (python -&gt; handlers)" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed folder (python -&gt; handlers)" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="b_np.max" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
