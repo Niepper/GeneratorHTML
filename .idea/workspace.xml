@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="renamed folder (python -&gt; handlers)">
-      <change afterPath="$PROJECT_DIR$/code/classes/person.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/handlers/csvHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC SMALL.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC.csv" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="added .cvs handling with c compatible class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/handlers/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/csvHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC BIG.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC BIG.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC LARGE.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC LARGE.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC SMALL.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC SMALL.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Batch.compileC.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.csvHandler.executor": "Run",
-    "Python.person.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Shell Script.CompileC.executor": "Run",
-    "Shell Script.compileC.sh.executor": "Run",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/niepper/games/pytong/PycharmProjects/GeneratorHTML/code/website/exported",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets.indent"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Batch.compileC.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csvHandler.executor&quot;: &quot;Run&quot;,
+    &quot;Python.person.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Shell Script.CompileC.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.compileC.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/niepper/games/pytong/PycharmProjects/GeneratorHTML/code/website/exported&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets.indent&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/website/exported" />
@@ -81,7 +85,7 @@
       <recent name="$PROJECT_DIR$/cpp/source" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Shell Script.CompileC">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
       <module name="GeneratorHTML" />
       <option name="ENV_FILES" value="" />
@@ -229,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712265929688</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added .cvs handling with c compatible class">
+      <option name="closed" value="true" />
+      <created>1712390285748</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712390285748</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +265,8 @@
     <MESSAGE value="Added additional example" />
     <MESSAGE value="Added comments" />
     <MESSAGE value="renamed folder (python -&gt; handlers)" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed folder (python -&gt; handlers)" />
+    <MESSAGE value="added .cvs handling with c compatible class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .cvs handling with c compatible class" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

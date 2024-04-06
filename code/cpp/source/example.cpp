@@ -6,6 +6,20 @@
 #define def
 #endif
 
+
+struct osoba{
+    std::string imie;
+    std::string nazwisko;
+    bool plec; //true-kobieta, false-mezczyzna
+    int wiek;
+    float waga;
+    float wzrost;
+    float BMI;
+    std::string opis;
+};
+
+
+
 extern "C"
 {
 
