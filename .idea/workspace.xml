@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="added .cvs handling with c compatible class">
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="changed .csv handling to be c++ ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/classes/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/classes/person.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/handlers/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/csvHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC BIG.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC BIG.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC LARGE.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC LARGE.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC SMALL.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC SMALL.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/website/exported/BMI CALC.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/website/exported/BMI CALC.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
       <recent name="$PROJECT_DIR$/cpp/source" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.CompileC">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
       <module name="GeneratorHTML" />
       <option name="ENV_FILES" value="" />
@@ -241,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712390285748</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="changed .csv handling to be c++ ready">
+      <option name="closed" value="true" />
+      <created>1712427023223</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712427023224</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +270,8 @@
     <MESSAGE value="Added comments" />
     <MESSAGE value="renamed folder (python -&gt; handlers)" />
     <MESSAGE value="added .cvs handling with c compatible class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .cvs handling with c compatible class" />
+    <MESSAGE value="changed .csv handling to be c++ ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed .csv handling to be c++ ready" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

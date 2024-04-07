@@ -1,15 +1,12 @@
 import ctypes
 import os
 from pathlib import Path
-from classes.person import Person
 
 LIB_PATH = "./code/cpp/lib/"
 LIB_EXTENSION = {"POSIX": ".so", "WIN": ".dll"}
 
 
 # Na podstawie systemu operacyjnego użytkownika wybierana jest prawidłowa dynamiczna biblioteka
-
-
 def libFullPath(filename: str) -> str:
     if os.name == "nt":
         return str(Path(f"{LIB_PATH}{filename}{LIB_EXTENSION['WIN']}").absolute())
@@ -23,5 +20,5 @@ def loadLib(filePath: str):
 
 # Zmiana listy na typ kompatybilny z c++
 def ToCArray(pyList: list, itemType=ctypes.c_int):
-    return (itemType * len(pyList))(*[ctypes.c_int(int(i)) for i in pyList])
+    return (itemType * len(pyList))(*list(map(lambda x: ctypes.c_int(int(x)), pyList)))
 
