@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Beatify code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="God Give Me mercy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/classes/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/classes/person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/cpp/lib/example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/cpp/lib/example.so" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/handlers/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/csvHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712490320573</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="God Give Me mercy">
+      <option name="closed" value="true" />
+      <created>1713197367978</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713197367978</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +287,8 @@
     <MESSAGE value="added .cvs handling with c compatible class" />
     <MESSAGE value="changed .csv handling to be c++ ready" />
     <MESSAGE value="Beatify code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beatify code" />
+    <MESSAGE value="God Give Me mercy" />
+    <option name="LAST_COMMIT_MESSAGE" value="God Give Me mercy" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

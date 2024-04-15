@@ -5,7 +5,7 @@
 #define def
 #endif
 
-
+//NOTKA DLA MIKOŁAJA: NIE ROBIMY STRUCTA WALISZ SAME ZMIENNE ROBIMY I DO ZWRACANIA BO PIERDOLĘ TO WSZYSTKO I SIĘ TO PIERDZIELI JAK CHCĘ TO JAKOŚ NORMALNIE OGARNĄĆ
 #include <string>
 #include <cmath>
 #include <iostream>
@@ -24,7 +24,7 @@ extern "C" {
 
     def float kalkulator(float waga, float wzrost) {
         float wzrostM = wzrost/100;
-        return (waga / pow(wzrostM,2));
+        return 2137;
     }
 }
 

@@ -11,4 +11,8 @@ if __name__ == '__main__':
 
     b = loadLib("example").kalkulator
 
-    map(b,)
+    for i in a:
+        b.argtypes = [ctypes.c_float, ctypes.c_float]
+        b.restype = ctypes.c_float
+        i.BMI = round(b(ctypes.c_float(i.waga), ctypes.c_float(i.wzrost)),2)
+        print(i.BMI)
