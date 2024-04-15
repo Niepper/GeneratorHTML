@@ -10,4 +10,6 @@ if __name__ == '__main__':
     a = readCSV(Path("./code/website/exported/BMI CALC SMALL.csv").absolute())
 
     a = calcBMI(a)
+    for i in a:
+        print(i.BMI)
 

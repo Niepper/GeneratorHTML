@@ -26,7 +26,7 @@ def ToCArray(pyList: list, itemType=ctypes.c_int):
 
 
 def calcBMI(osoby: list[Person]):
-    calc = loadLib("example").kalkulator
+    calc = loadLib("BMICalc").kalkulator
     for i in osoby:
         calc.argtypes = [ctypes.c_float, ctypes.c_float]
         calc.restype = ctypes.c_float
