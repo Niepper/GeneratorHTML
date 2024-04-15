@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="changed .csv handling to be c++ ready">
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Beatify code">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/classes/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/classes/person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/cpp/lib/example.dll" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/cpp/lib/example.so" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/lib/example.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/handlers/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/csvHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,7 @@
     &quot;Batch.compileC.executor&quot;: &quot;Run&quot;,
     &quot;Python.Main.executor&quot;: &quot;Run&quot;,
     &quot;Python.csvHandler.executor&quot;: &quot;Run&quot;,
+    &quot;Python.flaskBackend.executor&quot;: &quot;Run&quot;,
     &quot;Python.person.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -74,11 +79,11 @@
       <recent name="$PROJECT_DIR$/code/website/exported" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/website/static" />
+      <recent name="$PROJECT_DIR$/code/website" />
+      <recent name="$PROJECT_DIR$/code/website/templates" />
+      <recent name="$PROJECT_DIR$/code/website/frontend" />
       <recent name="$PROJECT_DIR$/code" />
-      <recent name="$PROJECT_DIR$/helper" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/cpp/lib" />
-      <recent name="$PROJECT_DIR$/cpp/source" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Main">
@@ -245,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712427023224</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Beatify code">
+      <option name="closed" value="true" />
+      <created>1712490320573</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712490320573</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +284,8 @@
     <MESSAGE value="renamed folder (python -&gt; handlers)" />
     <MESSAGE value="added .cvs handling with c compatible class" />
     <MESSAGE value="changed .csv handling to be c++ ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed .csv handling to be c++ ready" />
+    <MESSAGE value="Beatify code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beatify code" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

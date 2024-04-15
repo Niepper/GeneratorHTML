@@ -1,4 +1,3 @@
-#include <iostream>
 /* Dodaje flagę wymaganą do kompilacji jako plik .dll dla rodziny systemów Windows*/
 #ifdef _WIN32
 #define def __declspec(dllexport)
@@ -6,55 +5,36 @@
 #define def
 #endif
 
+#include <iomanip>
+#include <string>
+#include <cmath>
+#include <iostream>
 
-struct osoba{
-    std::string imie;
-    std::string nazwisko;
-    bool plec; //true-kobieta, false-mezczyzna
-    int wiek;
-    float waga;
-    float wzrost;
-    float BMI;
-    std::string opis;
-};
+extern "C" {
 
-
-
-extern "C"
-{
-
-    def int add(int a, int b){
+    def int add(int a, int b) {
         return (a + b);
     }
 
-    def void subtractArrays(int* a, int* b, int size){
-        for(int i = 0; i < size; i++){
+    def void subtractArrays(int* a, int* b, int size) {
+        for(int i = 0; i < size; i++) {
             a[i] -= b[i];
         }
     }
 
+    def float kalkulator(float waga, float wzrost) {
+        float wzrostM = wzrost/100;
+        return (waga / pow(wzrostM,2));
+    }
 }
 
 
 
 
-struct osoba{
-string imie;
-string nazwisko;
-bool plec;//true-kobieta, false-mezczyzna
-int wiek;
-float waga;
-float wzrost;
-float BMI;
-string opis;
-};
+/*
 
-osoba kalkulator(osoba a)
-{
-  a.BMI=(a.waga/(a.wzrost*a.wzrost))*10000;
-  return a;
-}
-osoba opis(osoba a)
+
+Person opis(Person a)
 {
   if(a.plec==true)
   {
@@ -174,4 +154,6 @@ osoba opis(osoba a)
       }
     }
   }
+    return a;
 }
+*/
