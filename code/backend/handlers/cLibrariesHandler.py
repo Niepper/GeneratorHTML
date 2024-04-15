@@ -2,9 +2,9 @@ import ctypes
 import os
 from pathlib import Path
 
-from classes.person import Person
+from backend.classes.person import Person
 
-LIB_PATH = "./code/cpp/lib/"
+LIB_PATH = "./code/backend/cpp/lib/"
 LIB_EXTENSION = {"POSIX": ".so", "WIN": ".dll"}
 
 

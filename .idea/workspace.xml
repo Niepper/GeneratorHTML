@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="God Give Me mercy">
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Moved BMI calculator to cLibrariesHandler.py">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024__18_18__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/cpp/source/example.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/handlers/cLibrariesHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -260,7 +261,47 @@
       <option name="project" value="LOCAL" />
       <updated>1713197367978</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Proof of concept c++ implementation of calculating BMI">
+      <option name="closed" value="true" />
+      <created>1713198501346</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713198501346</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Proof of concept c++ implementation of calculating BMI">
+      <option name="closed" value="true" />
+      <created>1713198584356</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713198584356</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added and reformated flask">
+      <option name="closed" value="true" />
+      <created>1713198732573</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713198732573</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Reverted changes">
+      <option name="closed" value="true" />
+      <created>1713198801606</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713198801606</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Moved BMI calculator to cLibrariesHandler.py">
+      <option name="closed" value="true" />
+      <created>1713208591815</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713208591815</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,7 +329,11 @@
     <MESSAGE value="changed .csv handling to be c++ ready" />
     <MESSAGE value="Beatify code" />
     <MESSAGE value="God Give Me mercy" />
-    <option name="LAST_COMMIT_MESSAGE" value="God Give Me mercy" />
+    <MESSAGE value="Proof of concept c++ implementation of calculating BMI" />
+    <MESSAGE value="Added and reformated flask" />
+    <MESSAGE value="Reverted changes" />
+    <MESSAGE value="Moved BMI calculator to cLibrariesHandler.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved BMI calculator to cLibrariesHandler.py" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

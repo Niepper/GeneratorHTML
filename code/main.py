@@ -1,13 +1,10 @@
-import ctypes
 from pathlib import Path
 
-from classes.person import Person
-from handlers.cLibrariesHandler import loadLib, libFullPath, ToCArray, calcBMI
-from website.flaskBackend import startWebApp
-from handlers.csvHandler import readCSV
+from backend.handlers.cLibrariesHandler import calcBMI
+from backend.handlers.csvHandler import readCSV
 
 if __name__ == '__main__':
-    a = readCSV(Path("./code/website/exported/BMI CALC SMALL.csv").absolute())
+    a = readCSV(Path("./code/frontend/website/exported/BMI CALC SMALL.csv").absolute())
 
     a = calcBMI(a)
     for i in a:

@@ -1,5 +1,5 @@
 import csv
-from classes.person import Person
+from backend.classes.person import Person
 
 
 def readCSV(file):
