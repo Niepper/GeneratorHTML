@@ -1,11 +1,12 @@
-class Person():
+class Person:
 
-    def __init__(self, imie, nazwisko, plec, wiek, waga, wzrost):
-        self.imie = imie
-        self.nazwisko = nazwisko
-        self.plec = bool(plec)
-        self.wiek = int(wiek)
-        self.waga = float(waga)
-        self.wzrost = float(wzrost)
+    def __init__(self, name, surname, sex, age, weight, height):
+        self.name = name
+        self.surname = surname
+        self.sex = bool(sex)
+        self.age = int(age)
+        self.weight = float(weight)
+        self.height = float(height)
         self.BMI = 0
-        self.opis = "None"
+        self.desc = "None"
+

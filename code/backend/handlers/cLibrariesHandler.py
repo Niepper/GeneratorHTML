@@ -30,5 +30,5 @@ def calcBMI(osoby: list[Person]):
     for i in osoby:
         calc.argtypes = [ctypes.c_float, ctypes.c_float]
         calc.restype = ctypes.c_float
-        i.BMI = round(calc(ctypes.c_float(i.waga), ctypes.c_float(i.wzrost)), 2)
+        i.BMI = round(calc(ctypes.c_float(i.weight), ctypes.c_float(i.height)), 2)
     return osoby
