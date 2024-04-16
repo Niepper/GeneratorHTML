@@ -7,20 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Generator Raportów BMI</title>
     <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/dragDrop.js"></script>
 </head>
 <body>
 
 <div id="main">
     <h1>Raport BMI</h1>
-    <div id="pickerBox" for="csvPicker">
-        <img src="../static/csvFile.svg" alt="">
-    
-    <label for="csvPicker">
-        <input type="file" name="csvPicker" id="csvPicker" accept=".csv">
-        <p>Kliknij lub przerzuć plik <br>by wygenerować raport</p>
-    </label>
-    </div>
 
+    <div id="drop_zone">
+        <img src="../static/csvFile.svg">
+        <p id="drop_zone_text">Drag & Drop CSV file here or click to select file</p>
+        <input type="file" id="file_input" style="display: none;" accept=".csv">
+    </div>
+    <button id="upload_button" disabled>Upload</button>
 </div>
 
 
