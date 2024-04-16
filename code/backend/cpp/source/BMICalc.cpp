@@ -1,33 +1,30 @@
-/* Dodaje flagę wymaganą do kompilacji jako plik .dll dla rodziny systemów Windows*/
 #ifdef _WIN32
 #define def __declspec(dllexport)
 #else
 #define def
 #endif
 
-//NOTKA DLA MIKOŁAJA: NIE ROBIMY STRUCTA WALISZ SAME ZMIENNE ROBIMY I DO ZWRACANIA BO PIERDOLĘ TO WSZYSTKO I SIĘ TO PIERDZIELI JAK CHCĘ TO JAKOŚ NORMALNIE OGARNĄĆ
+//NOTKA DLA MIKOŁAJA: NIE ROBIMY STRUCTA WALISZ SAME ZMIENNE ROBIMY I DO ZWRACANIA BO PIERDOL�� TO WSZYSTKO I SI�� TO PIERDZIELI JAK CHC�� TO JAKOŚ NORMALNIE OGARNĄĆ
 #include <string>
 #include <cmath>
 #include <iostream>
 
+
 extern "C" {
 
-    def int add(int a, int b) {
-        return (a + b);
-    }
-
-    def void subtractArrays(int* a, int* b, int size) {
-        for(int i = 0; i < size; i++) {
-            a[i] -= b[i];
-        }
-    }
-
+    /**
+     * brief Calculates the BMI (Body Mass Index) using the provided weight and height.
+     *
+     * param waga The weight in kilograms.
+     * param wzrost The height in centimeters.
+     *
+     * returns The calculated BMI.
+     */
     def float kalkulator(float waga, float wzrost) {
         float wzrostM = wzrost/100;
         return waga / pow(wzrostM,2);
     }
 }
-
 
 
 

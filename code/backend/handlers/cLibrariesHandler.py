@@ -25,7 +25,21 @@ def ToCArray(pyList: list, itemType=ctypes.c_int):
     return (itemType * len(pyList))(*list(map(lambda x: ctypes.c_int(int(x)), pyList)))
 
 
-def calcBMI(osoby: list[Person]):
+def calcBMI(osoby: list[Person]) -> list[Person]:
+    """
+    Calculates the Body Mass Index (BMI) for a list of Person objects.
+
+    Args:
+    osoby (list[Person]): A list of Person objects with weight and height attributes.
+
+    Returns:
+    list[Person]: A list of Person objects with the BMI attribute calculated.
+
+    Raises:
+    Exception: If the "BMICalc" library is not found or the "kalkulator" function is not available.
+
+    ```
+    """
     calc = loadLib("BMICalc").kalkulator
     for i in osoby:
         calc.argtypes = [ctypes.c_float, ctypes.c_float]
