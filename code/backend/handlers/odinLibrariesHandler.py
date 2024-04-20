@@ -4,7 +4,7 @@ from pathlib import Path
 
 from backend.classes.person import Person
 
-LIB_PATH = "./code/backend/cpp/lib/"
+LIB_PATH = "./code/backend/odin/lib/"
 LIB_EXTENSION = {"POSIX": ".so", "WIN": ".dll"}
 
 
@@ -40,9 +40,19 @@ def calcBMI(osoby: list[Person]) -> list[Person]:
 
     ```
     """
-    calc = loadLib("BMICalc").kalkulator
+    calc = loadLib("calculate").calcBmi
     for i in osoby:
         calc.argtypes = [ctypes.c_float, ctypes.c_float]
         calc.restype = ctypes.c_float
         i.BMI = round(calc(ctypes.c_float(i.weight), ctypes.c_float(i.height)), 2)
     return osoby
+
+
+def test():
+    test = loadLib("calculate").describeBMI
+    test.argtypes = [ctypes.c_int, ctypes.c_bool, ctypes.c_float, ctypes.c_char_p]
+    test.restypes = ctypes.c_char_p
+    a = b""
+    b = test(24,1,24.4,a)
+    print(b)
+    print(a)
