@@ -1,10 +1,8 @@
 from pathlib import Path
-# TODO: Use lxml instead
+from lxml import etree
 
 def loadSkeleton():
-    with open(Path("../skeleton/baseWebsite.html")) as file:
-        f = file.read().splitlines()
-    return f
+    return etree.parse(Path("../skeleton/baseWebsite.html"))
 
 
 def generateHTML(path = None):
