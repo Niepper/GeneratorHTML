@@ -1,7 +1,6 @@
 import csv
 from backend.classes.person import Person
 
-
 import csv
 from backend.classes.person import Person
 
@@ -36,3 +35,7 @@ def readCSV(file):
                 continue
 
     return structArray
+
+
+def sortPeople(arr: list[Person]):
+    return sorted(arr, key=lambda x: x.BMI)
