@@ -41,7 +41,7 @@ float height;
 float BMI = 0;
 string desc = "None";
 
-string BMI(bool sex, int age, float BMI){
+
 const char* opis(bool sex, int age, float BMI)
 {
  char* desc = malloc(100);
@@ -470,6 +470,6 @@ const char* opis(bool sex, int age, float BMI)
         }       
       }
     } 
-}        
+        
 
  
