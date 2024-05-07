@@ -4,12 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
 </head>
 <body>
-    
-    
+  <h1>Raport BMI</h1>
+  <h2>#Filename</h2>
+  
+    <div id="comp">
+      <div id="box">
+        <h3>Największe BMI:</h3>
+        <div id="comperation">
+          <h2>$Name<br/>$Surname</h2>
+          <p id="lnumber">00.0</p>
+        </div>
+
+      </div>
+
+
+    </div>
 
 </body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+
+    background-color: #272727;
+    font-family: "Kufam", sans-serif;
+    color: white;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+#main{
+    border: 2px solid;
+    border-color: aqua;
+    margin: auto;
+    width: 45%;
+    min-height: 50vh;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    padding-top: 15px;
+    font-size: 48px;
+    color: #fff;
+}
+h2{
+  font-size: 40px;
+}
+h3{
+  font-size: 32px;
+}
+
+#lnumber{
+  font-size: 96px;
+}
+
+#csvPicker {
+    display: block;
+    margin: 20px auto;
+}
+
+#csvPicker{
+    display: none;
+}
+
+
+label {
+    display: block;
+
+    background-color: #4caf4f00;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+
+
 </html>
