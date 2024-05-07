@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Started serious work on HTMl and CSS">
-      <change afterPath="$PROJECT_DIR$/code/frontend/website/static/csvFile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/frontend/website/static/old_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/frontend/website/templates/old_index.html" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="added requirements.txt, started working on html file generation">
+      <change beforePath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024__18_18__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/backend/classes/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/classes/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/backend/cpp/source/BMICalc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/cpp/source/BMICalc.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/backend/handlers/cLibrariesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/handlers/cLibrariesHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/frontend/website/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/code/frontend/website/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/frontend/website/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/frontend/website/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/frontend/website/websiteHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/frontend/website/websiteHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/backend/skeleton/baseWebsite.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/skeleton/baseWebsite.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -38,12 +39,12 @@
     &quot;assignee&quot;: &quot;Niepper&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Niepper/GeneratorHTML.git&quot;,
-    &quot;accountId&quot;: &quot;22a71d1e-9ba4-45f0-80b4-746b361fe6b4&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Niepper/GeneratorHTML.git",
+    "accountId": "fc9e8cf8-1804-41dc-b738-4152a361dcd6"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -61,37 +62,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Batch.compileC.executor": "Run",
-    "Python tests.Python tests for person.TestPerson.test_init_invalid_sex.executor": "Run",
-    "Python tests.Python tests in person.py.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.csvHandler.executor": "Run",
-    "Python.flask.executor": "Run",
-    "Python.flaskBackend.executor": "Run",
-    "Python.person.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Shell Script.CompileC.executor": "Run",
-    "Shell Script.compileC.sh.executor": "Run",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/niepper/games/pytong/PycharmProjects/GeneratorHTML/code/website/exported",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets.indent"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Batch.compileC.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for person.TestPerson.test_init_invalid_sex.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in person.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csvHandler.executor&quot;: &quot;Run&quot;,
+    &quot;Python.flask.executor&quot;: &quot;Run&quot;,
+    &quot;Python.flaskBackend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.htmlGen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.person.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Shell Script.CompileC.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.compileC.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/niepper/games/pytong/PycharmProjects/GeneratorHTML&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/website/exported" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/backend/odin/lib" />
+      <recent name="$PROJECT_DIR$/code/backend/odin/source" />
+      <recent name="$PROJECT_DIR$/code" />
       <recent name="$PROJECT_DIR$/code/frontend" />
       <recent name="$PROJECT_DIR$/code/backend" />
-      <recent name="$PROJECT_DIR$/code/website/static" />
-      <recent name="$PROJECT_DIR$/code/website" />
-      <recent name="$PROJECT_DIR$/code/website/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.flask">
@@ -104,7 +106,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (GeneratorHTML) (2)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -185,7 +186,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -382,7 +383,55 @@
       <option name="project" value="LOCAL" />
       <updated>1713213302635</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Removed old webcode">
+      <option name="closed" value="true" />
+      <created>1713286801577</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713286801577</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added file upload (file select/drag&amp;drop) to website">
+      <option name="closed" value="true" />
+      <created>1713291130556</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713291130556</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added code comments for dragDrop.js">
+      <option name="closed" value="true" />
+      <created>1713291447403</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713291447403</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added code comments for BMICalc.cpp, cLibrariesHandler.py and csvHandler.py">
+      <option name="closed" value="true" />
+      <created>1713291705424</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713291705424</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added line break and proper display message">
+      <option name="closed" value="true" />
+      <created>1713292011490</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713292011490</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added requirements.txt, started working on html file generation">
+      <option name="closed" value="true" />
+      <created>1713302841827</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1713302841827</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,7 +439,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="odin" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -398,7 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Init" />
     <MESSAGE value="Now script compiles to windows on linux" />
     <MESSAGE value="Finished example" />
     <MESSAGE value="corrected quotes" />
@@ -418,7 +478,13 @@
     <MESSAGE value="Renamed example.cpp to BMICalc.cpp" />
     <MESSAGE value="Reworked file structure" />
     <MESSAGE value="Started serious work on HTMl and CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started serious work on HTMl and CSS" />
+    <MESSAGE value="Removed old webcode" />
+    <MESSAGE value="Added file upload (file select/drag&amp;drop) to website" />
+    <MESSAGE value="Added code comments for dragDrop.js" />
+    <MESSAGE value="Added code comments for BMICalc.cpp, cLibrariesHandler.py and csvHandler.py" />
+    <MESSAGE value="added line break and proper display message" />
+    <MESSAGE value="added requirements.txt, started working on html file generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added requirements.txt, started working on html file generation" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

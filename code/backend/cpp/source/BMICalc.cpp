@@ -12,14 +12,7 @@
 
 extern "C" {
 
-    /**
-     * brief Calculates the BMI (Body Mass Index) using the provided weight and height.
-     *
-     * param waga The weight in kilograms.
-     * param wzrost The height in centimeters.
-     *
-     * returns The calculated BMI.
-     */
+
     def float kalkulator(float waga, float wzrost) {
         float wzrostM = wzrost/100;
         return waga / pow(wzrostM,2);

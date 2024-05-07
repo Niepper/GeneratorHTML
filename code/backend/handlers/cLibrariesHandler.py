@@ -20,11 +20,6 @@ def loadLib(filePath: str):
     return ctypes.cdll.LoadLibrary(libFullPath(filePath))
 
 
-# Zmiana listy na typ kompatybilny z c++
-def ToCArray(pyList: list, itemType=ctypes.c_int):
-    return (itemType * len(pyList))(*list(map(lambda x: ctypes.c_int(int(x)), pyList)))
-
-
 def calcBMI(osoby: list[Person]) -> list[Person]:
     """
     Calculates the Body Mass Index (BMI) for a list of Person objects.
