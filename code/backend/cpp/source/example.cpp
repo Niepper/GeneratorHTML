@@ -37,23 +37,16 @@ extern "C"
 
 
 
-
-struct osoba{
-string imie;
-string nazwisko;
-bool plec;//true-kobieta, false-mezczyzna
-int wiek;
-float waga;
-float wzrost;
-float BMI;
-string opis;
-};
+template <int min, int max> class range { static bool contains(int i) { return min <= i && i < max; }
 
 osoba kalkulator(osoba a)
 {
   a.BMI=(a.waga/(a.wzrost*a.wzrost))*10000;
   return a;
 }
+
+
+
 osoba opis(osoba a)
 {
   if(a.plec==true)

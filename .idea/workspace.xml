@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="added requirements.txt, started working on html file generation">
-      <change beforePath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GeneratorHTML.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_04_2024__18_18__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="Corrected Path">
       <change beforePath="$PROJECT_DIR$/code/backend/cpp/source/BMICalc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/cpp/source/BMICalc.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/backend/handlers/cLibrariesHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/handlers/cLibrariesHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/backend/skeleton/baseWebsite.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/skeleton/baseWebsite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/backend/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/cpp/source/example.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -431,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713302841827</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Corrected Path">
+      <option name="closed" value="true" />
+      <created>1715087069932</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715087069932</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Now script compiles to windows on linux" />
     <MESSAGE value="Finished example" />
     <MESSAGE value="corrected quotes" />
     <MESSAGE value="Remade file structure" />
@@ -484,7 +486,8 @@
     <MESSAGE value="Added code comments for BMICalc.cpp, cLibrariesHandler.py and csvHandler.py" />
     <MESSAGE value="added line break and proper display message" />
     <MESSAGE value="added requirements.txt, started working on html file generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added requirements.txt, started working on html file generation" />
+    <MESSAGE value="Corrected Path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected Path" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
