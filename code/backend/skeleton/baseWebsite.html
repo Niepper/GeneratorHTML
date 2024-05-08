@@ -12,25 +12,30 @@
   <h2>$Filename</h2>
   
     <div id="comp">
-      <div id="box">
-        <h3>Największe BMI:</h3>
-        <div id="comperation">
-          <h2>$Name<br/>$Surname</h2>
-          <p id="lnumber">00.0</p>
-          
+      <div id="box1">
+        <h3 id="title">Największe BMI:</h3>
+        <h2 id="comperation">$Name<br/>$Surname</h2>
+        <p id="lnumber">$00.0</p>
+      </div>
+
+      <div id="box2">
+        <h3 id="title">Najmniejsze BMI:</h3>
+          <h2 id="comperation">$Name<br/>$Surname</h2>
+          <p id="lnumber">$00.0</p>
         </div>
-        <table style="margin: auto;">
-          <tr style="text-align: center; ">
+    </div>  
+        <table>
+          <tr>
             <th>Imię</th>
             <th>Nazwisko</th>
             <th>Płeć</th>
             <th>Wiek</th>
             <th>Waga (kg)</th>
             <th>Wzrost (cm)</th>
-            <th>BMI</th>\
+            <th>BMI</th>
             <th>Stan</th>
           </tr>
-          <tr style="text-align: center; ">
+          <tr>
             <td>$Imię</td>
             <td>$Nazwisko</td>
             <td>$Płeć</td>
@@ -40,7 +45,7 @@
             <td>$BMI</td>
             <td>$Stan</td>
           </tr>
-          <tr style="text-align: center; ">
+          <tr>
             <td>$Imię</td>
             <td>$Nazwisko</td>
             <td>$Płeć</td>
@@ -50,7 +55,7 @@
             <td>$BMI</td>
             <td>$Stan</td>
           </tr>
-          <tr style="text-align: center; ">
+          <tr>
             <td>$Imię</td>
             <td>$Nazwisko</td>
             <td>$Płeć</td>
@@ -60,7 +65,7 @@
             <td>$BMI</td>
             <td>$Stan</td>
           </tr>
-          <tr style="text-align: center; ">
+          <tr>
             <td>$Imię</td>
             <td>$Nazwisko</td>
             <td>$Płeć</td>
@@ -70,7 +75,7 @@
             <td>$BMI</td>
             <td>$Stan</td>
           </tr>
-          <tr style="text-align: center; ">
+          <tr>
             <td>$Imię</td>
             <td>$Nazwisko</td>
             <td>$Płeć</td>
@@ -80,7 +85,7 @@
             <td>$BMI</td>
             <td>$Stan</td>
           </tr>
-          <tr style="text-align: center; " bgcolor="kolor">
+          <tr>
             <td>$Imię</td>
             <td>$Nazwisko</td>
             <td>$Płeć</td>
@@ -91,11 +96,7 @@
             <td>$Stan</td>
           </tr>
         </table>
-      </div>
-      
-
-    </div>
-
+     
 </body>
 
 <style>
@@ -156,6 +157,87 @@ label {
     padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+table {
+     
+    border: 1px solid #272727;
+    border-collapse: collapse;
+    color: black;
+    margin: auto; 
+    width:80%; 
+    height:474px;
+    
+}
+
+td {
+    border: none;
+    height: 66px;
+    width: 160px;
+}
+tr {
+    border: none;
+    text-align: center;
+    height: 66px;
+    width: 160px;
+}
+
+th:first-of-type {
+  border-top-left-radius: 24px;
+}
+th:last-of-type {
+  border-top-right-radius: 24px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 24px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 24px;
+}
+tr:nth-child(even) {
+  background-color: #4dda6c;
+}
+tr:nth-child(odd) {
+  background-color: #a6ecb5;
+}
+tr:hover {background-color: #1a7f30;  color: white}
+
+#comp {
+  border: 1px solid red;
+}
+#box1 {
+  border: 5px solid #4dda6c;
+  border-radius: 24px;
+  float:left;
+  width:25%;
+  margin-left:15%;
+  margin-bottom:5%;
+  
+}
+#box2 {
+  border: 5px solid #4dda6c;
+  border-radius: 24px;
+  float:right;
+  width:25%;
+  margin-right:15%;
+  margin-bottom:5%;
+  
+}
+#comperation {
+  background-color: #a6ecb5;
+  float:left;
+  width:50%;
+}
+#lnumber {
+  background-color: #a6ecb5;
+  float:left;
+  width:50%;
+  
+}
+#title{
+  background-color: #a6ecb5;
+  float:left;
+  width:100%;
 }
 </style>
 
