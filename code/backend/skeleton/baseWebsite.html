@@ -15,20 +15,27 @@
 
   <div id="comp">
     <div class="box">
-      <h3 class="title">Największe BMI:</h3>
-      <div>
-        <h2 class="comperation">$Name<br />$Surname</h2>
-        <p class="lnumber">$00.0</p>
+      <div class="title">
+        <p>Największe BMI:</p>
       </div>
+      <div  class="comperation">
+        <p>$Name<br />$Surname</p>
+      </div>
+       <div class="lnumber">
+        <p>$00.0</p>
+       </div>
     </div>
 
     <div class="box">
-      <h3 class="title">Najmniejsze BMI:</h3>
-      <div>
-
-        <h2 class="comperation">$Name<br />$Surname</h2>
-        <p class="lnumber">$00.0</p>
-    </div>
+      <div class="title">
+        <p>Najmniejsze BMI:</p>
+      </div>
+      <div  class="comperation">
+        <p>$Name<br />$Surname</p>
+      </div>
+       <div class="lnumber">
+        <p>$00.0</p>
+       </div>
     </div>
   </div>
   <table>
@@ -126,10 +133,12 @@
     padding-top: 15px;
     font-size: 48px;
     color: #fff;
+    font-size: 2vw ;
   }
 
   h2 {
     font-size: 40px;
+    font-size: 2vw ;
   }
 
   h3 {
@@ -219,25 +228,34 @@
     width: 25%;
     max-width: 25%;
     margin-bottom: 5%;
-    flex: 1;
     overflow:hidden;
-    display: flex;
     justify-content: space-evenly;
-
   }
 
   .lnumber{
-    background-color: aqua;
+    float:left;
+    font-size: 3vw ;
+    width: 50%;
+    box-sizing: border-box;
+    height: 50%;
+    
   }
-  .comperation, .lnumber{
-    display: inline-block;
+  .comperation{
     justify-self: center;
-    background-color: red;
-    flex: 1;
+    float:left;
+    width: 50%;
+    font-size: 2vw ;
+    text-align: left;
+    padding-left: 3%;
+    box-sizing: border-box;
+    height: 50%;
   }
 
   .title {
-    flex: 2;
+    width: 100%;
+    text-align: left;
+    padding-left: 3%;
+    font-size: 2vw;
   }
 </style>
 
