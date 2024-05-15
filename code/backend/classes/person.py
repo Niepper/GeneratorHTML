@@ -9,4 +9,3 @@ class Person:
         self.height = float(height)
         self.BMI = 0
         self.desc = "None"
-

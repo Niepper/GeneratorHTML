@@ -40,9 +40,8 @@ def upload():
 def report(filename):
     currFileName = filename
     if ".html" in filename:
-        return render_template(f"reports/{filename}", filename=filename, currName = currFileName)
-    return render_template(f"reports/{filename}.html", filename=filename, currName= currFileName)
-
+        return render_template(f"reports/{filename}", filename=filename, currName=currFileName)
+    return render_template(f"reports/{filename}.html", filename=filename, currName=currFileName)
 
 
 def startWebApp():

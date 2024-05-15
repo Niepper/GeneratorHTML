@@ -6,8 +6,6 @@ from lxml import etree, html
 from backend.classes.person import Person
 
 
-
-
 def handleNames(PATH):
     FINALNAME = re.sub(r'\.[^.]*$', '', PATH.name)
     FINALNAME = FINALNAME.replace(" ", "_")
@@ -39,7 +37,7 @@ def fillTable(people: list[Person] = None, tree=None):
         table = tree.xpath("//table")[0]
         NewRow = etree.Element("tr")
         cell = etree.SubElement(NewRow, "td")
-        cell.text = str(index)
+        cell.text = str(index + 1)
         cell1 = etree.SubElement(NewRow, "td")
         cell1.text = i.name
         cell2 = etree.SubElement(NewRow, "td")
