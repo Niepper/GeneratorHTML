@@ -1,7 +1,5 @@
 import csv
-from backend.classes.person import Person
 
-import csv
 from backend.classes.person import Person
 
 
