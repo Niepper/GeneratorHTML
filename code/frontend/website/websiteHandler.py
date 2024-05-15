@@ -6,6 +6,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 UPLOAD_FOLDER = './code/frontend/website/exported'
+REPORT_FOLDER = './code/frontend/website/templates/reports/'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
@@ -14,7 +15,9 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    files = list(map(lambda x: x.removesuffix(".html"), os.listdir(REPORT_FOLDER)))
+
+    return render_template("index.html", files=files)
 
 
 @app.route('/upload', methods=['POST'])
@@ -33,6 +36,12 @@ def upload():
         return 'Invalid file format. Only CSV files are allowed.'
 
 
+@app.route('/reports/<filename>')
+def report(filename):
+    currFileName = filename
+    if ".html" in filename:
+        return render_template(f"reports/{filename}", filename=filename, currName = currFileName)
+    return render_template(f"reports/{filename}.html", filename=filename, currName= currFileName)
 
 
 

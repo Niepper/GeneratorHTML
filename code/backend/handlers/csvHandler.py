@@ -28,7 +28,7 @@ def readCSV(file):
 
         for index, row in enumerate(CSVReader):
             try:
-                structArray.append(Person(row[0], row[1], int(row[2]), bool(row[3]), float(row[4]), float(row[5])))
+                structArray.append(Person(row[0], row[1], int(row[2]), row[3], float(row[4]), float(row[5])))
             except ValueError:
                 continue
 
