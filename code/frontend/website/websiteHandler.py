@@ -9,8 +9,8 @@ from backend.handlers.htmlHandler import generateHTML
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = './code/frontend/website/exported'
-REPORT_FOLDER = './code/frontend/website/templates/reports/'
+UPLOAD_FOLDER = Path('./frontend/website/exported').absolute()
+REPORT_FOLDER = Path('./frontend/website/templates/reports/').absolute()
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
@@ -67,7 +67,7 @@ def execute():
 
 
 def startWebApp():
-    app.run(debug=True)
+    app.run()
 
 
 if __name__ == '__main__':
