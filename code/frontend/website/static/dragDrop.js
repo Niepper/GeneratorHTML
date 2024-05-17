@@ -24,15 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Add event listeners for the file input and upload button
+    // Add event listeners for the file input
     dropZone.addEventListener('drop', function(e) {
         handleDrop(e, dropZone, fileInput);
     });
     fileInput.addEventListener('change', function() {
-        handleFileInput(fileInput, dropZoneText, uploadButton);
+        handleFileInput(fileInput, dropZoneText);
     });
+
+    // Add event listener for the upload button
     uploadButton.addEventListener('click', function() {
-        handleUploadButtonClick(fileInput);
+        window.location.href = '/your-specific-directory';
     });
 });
 
@@ -44,26 +46,24 @@ function handleDrop(e, dropZone, fileInput) {
     handleFileInput(fileInput); // Call handleFileInput function to handle dropped files
 }
 
-function handleFileInput(fileInput, dropZoneText, uploadButton) {
+function handleFileInput(fileInput, dropZoneText) {
     const files = fileInput.files;
-    handleFiles(files, uploadButton);
     if (files.length > 0) {
         dropZoneText.textContent = files[0].name;
+        handleFiles(files);
     }
 }
 
-function handleFiles(files, uploadButton) {
+function handleFiles(files) {
     const file = files[0];
     if (file && file.name.endsWith('.csv')) {
-        uploadButton.disabled = false;
+        uploadFile(file);
     } else {
-        uploadButton.disabled = true;
         alert('Invalid file format. Only CSV files are allowed.');
     }
 }
 
-function handleUploadButtonClick(fileInput) {
-    const file = fileInput.files[0];
+function uploadFile(file) {
     const formData = new FormData();
     formData.append('file', file);
 
@@ -78,7 +78,9 @@ function handleUploadButtonClick(fileInput) {
             throw new Error('Error uploading file: ' + response.statusText);
         }
     })
-
+    .then(result => {
+        document.getElementById('upload_button').disabled = false;
+    })
     .catch(error => {
         alert('Error uploading file: ' + error.message);
     });

@@ -28,7 +28,9 @@
         <p id="drop_zone_text">Kliknij lub przerzuć plik<br>by wygenerować raport</p>
         <input type="file" id="file_input" style="display: none;" accept=".csv">
     </div>
-    <button id="upload_button" disabled>Upload</button>
+    <form action="{{ url_for('execute') }}" method="post">
+    <button id="upload_button" type="submit" disabled>Przejdź do raportu</button>
+    </form>
 </div>
 
 

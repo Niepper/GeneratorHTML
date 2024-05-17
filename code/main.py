@@ -7,14 +7,7 @@ from backend.handlers.csvHandler import readCSV, sortPeople
 from backend.handlers.htmlHandler import generateHTML
 import re
 
-
+from frontend.website.websiteHandler import startWebApp
 
 if __name__ == '__main__':
-    PATH = Path("./code/frontend/website/exported/BMI CALC SMALL.csv")
-
-
-    people = readCSV(PATH.absolute())
-
-    people = calcBMI(people)
-    people = sortPeople(people)
-    generateHTML(people, PATH)
+    startWebApp()
