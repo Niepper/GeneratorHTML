@@ -4,7 +4,7 @@ from pathlib import Path
 
 from backend.classes.person import Person
 
-LIB_PATH = "./code/backend/cpp/lib/"
+LIB_PATH = "./backend/cpp/lib/"
 LIB_EXTENSION = {"POSIX": ".so", "WIN": ".dll"}
 
 
