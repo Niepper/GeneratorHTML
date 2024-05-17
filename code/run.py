@@ -11,7 +11,7 @@ REPORTS_PATH = Path("./frontend/website/templates/reports/").absolute()
 
 
 def run():
-    webbrowser.open("http://127.0.0.1:5000")
+    webbrowser.open("http://127.0.0.1:5331")
     subprocess.run([Path("./venv/bin/python").absolute(), "./init.py"], capture_output=True, text=True)
 
 
@@ -42,5 +42,4 @@ def checkDependencies():
 
 if __name__ == "__main__":
     checkVenv()
-
     run()

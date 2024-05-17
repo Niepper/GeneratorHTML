@@ -32,10 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
         handleFileInput(fileInput, dropZoneText);
     });
 
-    // Add event listener for the upload button
-    uploadButton.addEventListener('click', function() {
-        window.location.href = '/your-specific-directory';
-    });
 });
 
 function handleDrop(e, dropZone, fileInput) {

@@ -1,38 +1,38 @@
 import os
 from pathlib import Path
 
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect
 
 from backend.handlers.cLibrariesHandler import calcBMI
 from backend.handlers.csvHandler import readCSV, sortPeople
 from backend.handlers.htmlHandler import generateHTML
 
-app = Flask(__name__)
+website = Flask(__name__)
 
 UPLOAD_FOLDER = Path('./frontend/website/exported').absolute()
 REPORT_FOLDER = Path('./frontend/website/templates/reports/').absolute()
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['REPORT_FOLDER'] = REPORT_FOLDER
+website.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+website.config['REPORT_FOLDER'] = REPORT_FOLDER
 currFilePath = ""
 
 
-@app.route('/')
+@website.route('/')
 def index():
-    files = list(map(lambda x: x.removesuffix(".html"), os.listdir(app.config['REPORT_FOLDER'])))
+    files = list(map(lambda x: x.removesuffix(".html"), os.listdir(website.config['REPORT_FOLDER'])))
 
     return render_template("index.html", files=files)
 
 
-@app.route('/upload', methods=['POST'])
+@website.route('/upload', methods=['POST'])
 def upload():
     global currFilePath
     if 'file' not in request.files:
         return 'No file part'
     file = request.files['file']
-    filePath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+    filePath = os.path.join(website.config['UPLOAD_FOLDER'], file.filename)
     if file.filename == '':
         return 'No selected file'
 
@@ -45,7 +45,7 @@ def upload():
         return 'Invalid file format. Only CSV files are allowed.'
 
 
-@app.route('/reports/<filename>')
+@website.route('/reports/<filename>')
 def displayReport(filename):
     currFileName = filename
     if ".html" in filename:
@@ -53,10 +53,11 @@ def displayReport(filename):
     return render_template(f"reports/{filename}.html", filename=filename, currName=currFileName)
 
 
-@app.route('/execute', methods=['POST'])
+@website.route('/execute', methods=['POST'])
 def execute():
     global currFilePath
     if request.method == 'POST':
+
         people = readCSV(currFilePath.absolute())
         people = calcBMI(people)
         people = sortPeople(people)
@@ -66,9 +67,3 @@ def execute():
     return 'Something went wrong'
 
 
-def startWebApp():
-    app.run()
-
-
-if __name__ == '__main__':
-    startWebApp()
