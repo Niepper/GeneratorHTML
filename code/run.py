@@ -4,16 +4,19 @@ import webbrowser
 import importlib.util
 from pathlib import Path
 import venv
+import importlib
+
 
 def run():
     webbrowser.open("http://127.0.0.1:5000")
-    subprocess.run(["python","./init.py"], capture_output=True, text=True)
+    subprocess.run(["./venv/bin/python", "./init.py"], capture_output=True, text=True)
+
 
 def checkVenv():
     if not os.path.exists("./venv"):
         print("Venv not found.")
         venv.create("./venv", with_pip=True)
-    subprocess.run(["source", "./venv/bin/activate"], shell=True)
+        checkDependencies()
 
 
 def checkDependencies():
@@ -21,11 +24,13 @@ def checkDependencies():
         a = f.readlines()
     a = map(lambda x: x.split("=")[0], a)
     for dependency in a:
-        spec = importlib.util.find_spec(dependency)
-        if spec is None:
-            subprocess.run(["pip", "install", dependency], shell=True)
-            print(f"Installing {dependency}")
+        try:
+            spec = importlib.import_module(dependency)
+            print(f"Found {dependency}")
+        except ImportError:
+            subprocess.run(["./venv/bin/pip", "install", dependency])
+
 
 if __name__ == "__main__":
     checkVenv()
-    checkDependencies()
+    run()
