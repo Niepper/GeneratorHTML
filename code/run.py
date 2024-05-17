@@ -20,6 +20,7 @@ def checkVenv():
         print("Venv not found.")
         venv.create(Path("./venv").absolute(), with_pip=True)
         checkDependencies()
+        REPORTS_PATH.mkdir()
         folderCheck()
 
 
