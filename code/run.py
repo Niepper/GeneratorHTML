@@ -9,6 +9,7 @@ import importlib
 
 REPORTS_PATH = Path("./frontend/website/templates/reports/").absolute()
 
+
 def run():
     webbrowser.open("http://127.0.0.1:5000")
     subprocess.run([Path("./venv/bin/python").absolute(), "./init.py"], capture_output=True, text=True)
@@ -19,6 +20,12 @@ def checkVenv():
         print("Venv not found.")
         venv.create(Path("./venv").absolute(), with_pip=True)
         checkDependencies()
+        folderCheck()
+
+
+def folderCheck():
+    if not os.path.exists(Path("./frontend/website/templates/reports").absolute()):
+        (Path("./frontend/website/templates/reports").mkdir(parents=True, exist_ok=True))
 
 
 def checkDependencies():
@@ -35,7 +42,5 @@ def checkDependencies():
 
 if __name__ == "__main__":
     checkVenv()
-    if not os.path.exists(Path("./frontend/website/templates/reports").absolute()):
-        (Path("./frontend/website/templates/reports").mkdir(parents=True, exist_ok=True))
-        print("Wygenerowano folder")
+
     run()
