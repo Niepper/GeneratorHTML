@@ -13,7 +13,7 @@ def checkVenv():
     if not os.path.exists("./venv"):
         print("Venv not found.")
         venv.create("./venv", with_pip=True)
-        subprocess.run(["source", "./venv/bin/activate"])
+    subprocess.run(["source", "./venv/bin/activate"], shell=True)
 
 
 def checkDependencies():
