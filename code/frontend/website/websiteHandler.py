@@ -10,7 +10,7 @@ from backend.handlers.htmlHandler import generateHTML
 app = Flask(__name__)
 
 UPLOAD_FOLDER = Path('./frontend/website/exported').absolute()
-REPORT_FOLDER = Path('./frontend/website/templates/reports/').absolute()
+REPORT_FOLDER = Path('./frontend/website/templates/report/').absolute()
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
@@ -45,12 +45,12 @@ def upload():
         return 'Invalid file format. Only CSV files are allowed.'
 
 
-@app.route('/reports/<filename>')
+@app.route('/report/<filename>')
 def displayReport(filename):
     currFileName = filename
     if ".html" in filename:
-        return render_template(f"reports/{filename}", filename=filename, currName=currFileName)
-    return render_template(f"reports/{filename}.html", filename=filename, currName=currFileName)
+        return render_template(f"report/{filename}", filename=filename, currName=currFileName)
+    return render_template(f"report/{filename}.html", filename=filename, currName=currFileName)
 
 
 @app.route('/execute', methods=['POST'])
@@ -62,7 +62,7 @@ def execute():
         people = sortPeople(people)
         generatedPath = generateHTML(people, currFilePath)
 
-        return redirect(f"/reports/{generatedPath}")
+        return redirect(f"/report/{generatedPath}")
     return 'Something went wrong'
 
 

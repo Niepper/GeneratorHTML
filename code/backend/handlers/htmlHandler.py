@@ -10,7 +10,7 @@ def handleNames(PATH):
     FINALNAME = re.sub(r'\.[^.]*$', '', PATH.name)
     FINALNAME = FINALNAME.replace(" ", "_")
 
-    while f"{FINALNAME}.html" in os.listdir("./frontend/website/templates/reports/"):
+    while f"{FINALNAME}.html" in os.listdir("./frontend/website/templates/report/"):
         print("Bazinga")
         FINALNAME += "_Nowy"
     FINALNAME += ".html"
@@ -71,7 +71,7 @@ def generateHTML(people: list[Person] = None, path=None):
     tree = fillTable(people, tree)
 
     moddified = html.tostring(tree, encoding="unicode")
-    with open(Path(f"./frontend/website/templates/reports/{filename}").absolute(), "w") as file:
+    with open(Path(f"./frontend/website/templates/report/{filename}").absolute(), "w") as file:
         file.write(moddified)
     return filename
 
