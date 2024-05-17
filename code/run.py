@@ -11,7 +11,9 @@ def run():
 
 def checkVenv():
     if not os.path.exists("./venv"):
+        print("Venv not found.")
         venv.create("./venv", with_pip=True)
+        subprocess.run(["source", "./venv/bin/activate"])
 
 
 def checkDependencies():
@@ -20,7 +22,10 @@ def checkDependencies():
     a = map(lambda x: x.split("=")[0], a)
     for dependency in a:
         spec = importlib.util.find_spec(dependency)
-        print(f"{spec} {dependency}")
+        if spec is None:
+            subprocess.run(["pip", "install", dependency])
+            print(f"Installing {dependency}")
 
 if __name__ == "__main__":
     checkVenv()
+    checkDependencies()
