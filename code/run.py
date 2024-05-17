@@ -33,10 +33,7 @@ def checkDependencies():
         a = f.readlines()
     a = map(lambda x: x.split("=")[0], a)
     for dependency in a:
-        try:
-            print(f"Found {dependency}")
-        except ImportError:
-            subprocess.run([Path("./venv/bin/pip").absolute(), "install", dependency]) if os.name != "nt" else subprocess.run([Path("./venv/Scripts/pip").absolute(), "install", dependency])
+        subprocess.run([Path("./venv/bin/pip").absolute(), "install", dependency]) if os.name != "nt" else subprocess.run([Path("./venv/Scripts/pip").absolute(), "install", dependency])
 
 
 if __name__ == "__main__":
