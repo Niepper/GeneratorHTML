@@ -24,8 +24,12 @@ def checkVenv():
 
 
 def folderCheck():
-    if not os.path.exists(Path("./frontend/website/templates/reports").absolute()):
-        (Path("./frontend/website/templates/reports").mkdir(parents=True, exist_ok=True))
+    try:
+        Path("./frontend/website/templates/reports").mkdir(parents=True, exist_ok=True)
+    except Exception as e:
+        pass
+
+
 
 
 def checkDependencies():
