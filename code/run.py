@@ -23,7 +23,7 @@ def checkDependencies():
     for dependency in a:
         spec = importlib.util.find_spec(dependency)
         if spec is None:
-            subprocess.run(["pip", "install", dependency])
+            subprocess.run(["pip", "install", dependency], shell=True)
             print(f"Installing {dependency}")
 
 if __name__ == "__main__":
