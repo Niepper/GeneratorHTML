@@ -35,7 +35,7 @@ def checkDependencies():
 
 if __name__ == "__main__":
     checkVenv()
-    if not shutil.path.exists(Path("./")):
+    if not os.path.exists(Path("./")):
         shutil.mkdir(Path("./frontend/website/templates/reports/"))
         print("Wygenerowano folder")
     run()
