@@ -12,8 +12,7 @@ REPORTS_PATH = Path("./frontend/website/templates/reports/").absolute()
 
 def run():
     webbrowser.open("http://127.0.0.1:5331")
-    subprocess.run([Path("./venv/bin/python").absolute(), "./init.py"], capture_output=True, text=True)
-
+    subprocess.run([Path("./venv/Scripts/python").absolute(), "./init.py"], capture_output=True, text=True) if os.name == "nt" else subprocess.run([Path("./venv/bin/python").absolute(), "./init.py"], capture_output=True, text=True)
 
 def checkVenv():
     if not os.path.exists(Path("./venv").absolute()):
@@ -38,7 +37,7 @@ def checkDependencies():
             spec = importlib.import_module(dependency)
             print(f"Found {dependency}")
         except ImportError:
-            subprocess.run([Path("./venv/bin/pip").absolute(), "install", dependency])
+            subprocess.run([Path("./venv/bin/pip").absolute(), "install", dependency]) if os.name != "nt" else subprocess.run([Path("./venv/Scripts/pip").absolute(), "install", dependency])
 
 
 if __name__ == "__main__":
