@@ -11,7 +11,7 @@ def run():
 
 def checkVenv():
     if not os.path.exists("./venv"):
-        venv.create("./", with_pip=True)
+        venv.create("./venv", with_pip=True)
 
 
 def checkDependencies():
