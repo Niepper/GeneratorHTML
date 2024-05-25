@@ -67,7 +67,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (27 <= BMI && BMI < 37) {
                 opis = "Otyłość I stopnia";    
-            } else (else 37 <= BMI) {
+            } else (37 <= BMI) {
                 opis = "Otyłość II stopnia";
             }
             } else if (wiek >= 13 && wiek < 18) {  
@@ -79,7 +79,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (28 <= BMI && BMI < 38) {
                 opis = "Otyłość I stopnia";    
-            } else (else 38 <= BMI) {
+            } else (38 <= BMI) {
                 opis = "Otyłość II stopnia";
             }
             } else if (wiek >= 18 && wiek < 25) {
@@ -91,7 +91,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (29 <= BMI && BMI < 39) {
                 opis = "Otyłość I stopnia";    
-            } else (else 39 <= BMI) {
+            } else (39 <= BMI) {
                 opis = "Otyłość II stopnia";
             }
             } else if (wiek >= 25 && wiek < 35) { 
@@ -103,7 +103,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (30 <= BMI && BMI < 40) {
                 opis = "Otyłość I stopnia";    
-            } else (else 40 <= BMI) {
+            } else (40 <= BMI) {
                 opis = "Otyłość II stopnia";
             }
             } else if (wiek >= 35 && wiek < 45) { 
@@ -115,7 +115,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (31 <= BMI && BMI < 41) {
                 opis = "Otyłość I stopnia";    
-            } else (else 41 <= BMI) {
+            } else (41 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             } else if (wiek >= 45 && wiek < 55) {
@@ -127,7 +127,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (32 <= BMI && BMI < 42) {
                 opis = "Otyłość I stopnia";    
-            } else (else 42 <= BMI) {
+            } else (42 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             } else if (wiek >= 55 && wiek < 65) {   
@@ -139,7 +139,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (33 <= BMI && BMI < 43) {
                 opis = "Otyłość I stopnia";    
-            } else (else 43 <= BMI) {
+            } else (43 <= BMI) {
                 opis = "Otyłość II stopnia";
             }           
             } else if (wiek >= 65) {  
@@ -151,7 +151,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (34 <= BMI && BMI < 44) {
                 opis = "Otyłość I stopnia";    
-            } else (else 44 <= BMI) {
+            } else (44 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             }
@@ -165,7 +165,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (28 <= BMI && BMI < 38) {
                 opis = "Otyłość I stopnia";    
-            } else (else 38 <= BMI) {
+            } else (38 <= BMI) {
                 opis = "Otyłość II stopnia";
             }
             } else if (wiek >= 13 && wiek < 18) {  
@@ -177,7 +177,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (29 <= BMI && BMI < 39) {
                 opis = "Otyłość I stopnia";    
-            } else (else 39 <= BMI) {
+            } else (39 <= BMI) {
                 opis = "Otyłość II stopnia";
             }
             } else if (wiek >= 18 && wiek < 25) {
@@ -189,7 +189,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (30 <= BMI && BMI < 40) {
                 opis = "Otyłość I stopnia";    
-            } else (else 40 <= BMI) {
+            } else (40 <= BMI) {
                 opis = "Otyłość II stopnia";
             }
             } else if (wiek >= 25 && wiek < 35) { 
@@ -201,7 +201,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (31 <= BMI && BMI < 41) {
                 opis = "Otyłość I stopnia";    
-            } else (else 41 <= BMI) {
+            } else (41 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             } else if (wiek >= 35 && wiek < 45) { 
@@ -213,7 +213,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (32 <= BMI && BMI < 42) {
                 opis = "Otyłość I stopnia";    
-            } else (else 42 <= BMI) {
+            } else (42 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             } else if (wiek >= 45 && wiek < 55) {
@@ -225,7 +225,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (33 <= BMI && BMI < 43) {
                 opis = "Otyłość I stopnia";    
-            } else (else 43 <= BMI) {
+            } else (43 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             } else if (wiek >= 55 && wiek < 65) {   
@@ -237,7 +237,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (34 <= BMI && BMI < 44) {
                 opis = "Otyłość I stopnia";    
-            } else (else 44 <= BMI) {
+            } else (44 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             } else if (wiek >= 65) {  
@@ -249,7 +249,7 @@ extern "C" {
                 opis = "Nadwaga";
             } else if (35 <= BMI && BMI < 45) {
                 opis = "Otyłość I stopnia";    
-            } else (else 45 <= BMI) {
+            } else (45 <= BMI) {
                 opis = "Otyłość II stopnia";
             }            
             }
