@@ -9,7 +9,10 @@
 git clone https://github.com/Niepper/GeneratorHTML.git
 cd ./GeneratorHTML/code
 ```
-2. Uruchomienie pliku ```run.py```
+2. Uruchomienie pliku ```run.sh``` (linux) lub ```run.bat``` (windows)
 ```shell
-python ./run.py
+./run.sh
 ```
+lub
+```shell
+.\run.bat```
