@@ -42,197 +42,197 @@ extern "C" {
          if (plec) {
               if (wiek < 13) {
                 if (BMI < 17) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (17 <= BMI && BMI < 22) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (22 <= BMI && BMI < 27) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (27 <= BMI && BMI < 37) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }
             } else if (wiek >= 13 && wiek < 18) {  
                 if (BMI < 18) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (18 <= BMI && BMI < 23) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (23 <= BMI && BMI < 28) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (28 <= BMI && BMI < 38) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }
             } else if (wiek >= 18 && wiek < 25) {
                 if (BMI < 19) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (19 <= BMI && BMI < 24) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (24 <= BMI && BMI < 29) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (29 <= BMI && BMI < 39) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }
             } else if (wiek >= 25 && wiek < 35) { 
                 if (BMI < 20) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (20 <= BMI && BMI < 25) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (25 <= BMI && BMI < 30) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (30 <= BMI && BMI < 40) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }
             } else if (wiek >= 35 && wiek < 45) { 
                 if (BMI < 21) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (21 <= BMI && BMI < 26) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (26 <= BMI && BMI < 31) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (31 <= BMI && BMI < 41) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             } else if (wiek >= 45 && wiek < 55) {
                 if (BMI < 22) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (22 <= BMI && BMI < 27) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (27 <= BMI && BMI < 32) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (32 <= BMI && BMI < 42) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             } else if (wiek >= 55 && wiek < 65) {   
                 if (BMI < 23) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (23 <= BMI && BMI < 28) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (28 <= BMI && BMI < 33) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (33 <= BMI && BMI < 43) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }           
             } else if (wiek >= 65) {  
                 if (BMI < 24) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (24 <= BMI && BMI < 29) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (29 <= BMI && BMI < 34) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (34 <= BMI && BMI < 44) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             }
         } else {
             if (wiek < 13) {
                 if (BMI < 18) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (18 <= BMI && BMI < 23) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (23 <= BMI && BMI < 28) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (28 <= BMI && BMI < 38) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }
             } else if (wiek >= 13 && wiek < 18) {  
                  if (BMI < 19) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (19 <= BMI && BMI < 24) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (24 <= BMI && BMI < 29) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (29 <= BMI && BMI < 39) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }
             } else if (wiek >= 18 && wiek < 25) {
                 if (BMI < 20) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (20 <= BMI && BMI < 25) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (25 <= BMI && BMI < 30) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (30 <= BMI && BMI < 40) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }
             } else if (wiek >= 25 && wiek < 35) { 
                 if (BMI < 21) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (21 <= BMI && BMI < 26) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (26 <= BMI && BMI < 31) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (31 <= BMI && BMI < 41) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             } else if (wiek >= 35 && wiek < 45) { 
                 if (BMI < 22) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (22 <= BMI && BMI < 27) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (27 <= BMI && BMI < 32) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (32 <= BMI && BMI < 42) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             } else if (wiek >= 45 && wiek < 55) {
                 if (BMI < 23) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (23 <= BMI && BMI < 28) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (28 <= BMI && BMI < 33) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (33 <= BMI && BMI < 43) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             } else if (wiek >= 55 && wiek < 65) {   
                if (BMI < 24) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (24 <= BMI && BMI < 29) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (29 <= BMI && BMI < 34) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (34 <= BMI && BMI < 44) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             } else if (wiek >= 65) {  
                 if (BMI < 25) {
-                opis = "Niedowaga";
+                opis = "NW";
             } else if (25 <= BMI && BMI < 30) {
-                opis = "Waga prawidlowa";
+                opis = "WP";
             } else if (30 <= BMI && BMI < 35) {
-                opis = "Nadwaga";
+                opis = "NaW";
             } else if (35 <= BMI && BMI < 45) {
-                opis = "Otylosc I stopnia";    
+                opis = "OIS";    
             } else{
-                opis = "Otylosc II stopnia";
+                opis = "OIIS";
             }            
             }
         }         
