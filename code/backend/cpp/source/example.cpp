@@ -7,504 +7,235 @@
 #endif
 
 
+struct osoba{
+    std::string imie;
+    std::string nazwisko;
+    bool plec; //true-kobieta, false-mezczyzna
+    int wiek;
+    float waga;
+    float wzrost;
+    float BMI;
+    std::string opis;
+};
 extern "C"
 {
 
-  def int add(int a, int b)
-  {
-    return (a + b);
-  }
-
-  def void subtractArrays(int* a, int* b, int size)
-  {
-    for(int i = 0; i < size; i++)
-    {
-      a[i] -= b[i];
+    def int add(int a, int b){
+        return (a + b);
     }
-  }
+
+    def void subtractArrays(int* a, int* b, int size){
+        for(int i = 0; i < size; i++){
+            a[i] -= b[i];
+        }
+    }
 
 }
-
-
-
-template <int min, int max> class range { static bool contains(int i) { return min <= i && i < max; }}
-
 osoba kalkulator(osoba a)
 {
-   BMI=( waga/( wzrost* wzrost))*10000;
+  a.BMI=(a.waga/(a.wzrost*a.wzrost))*10000;
   return a;
 }
-
-string name;
-string surname = surname;
-bool sex;
-int age;
-float weight;
-float height;
-float BMI = 0;
-string desc = "None";
-
-
-const char* opis(bool sex, int age, float BMI)
-{
-  char* desc = malloc(100);
-  {
-    if(sex==true)
-    {
-      if (range<0, 13>::contains(age))
-        {
-          if (range<0, 17>::contains(BMI))
-            {
-              desc="Niedowaga";
-              return desc;
+extern "C" {
+     const char* getBMICategory(float BMI, bool plec, int wiek) {
+        std::string opis;
+         if (plec) {
+              if (wiek < 13) {
+                if (BMI < 17) {
+                opis = "NW";
+            } else if (17 <= BMI && BMI < 22) {
+                opis = "WP";
+            } else if (22 <= BMI && BMI < 27) {
+                opis = "NaW";
+            } else if (27 <= BMI && BMI < 37) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
             }
-            else if (range<17, 22>::contains(BMI))
-            {
-              desc="Waga prawidlowa";
-              return desc;
+            } else if (wiek >= 13 && wiek < 18) {
+                if (BMI < 18) {
+                opis = "NW";
+            } else if (18 <= BMI && BMI < 23) {
+                opis = "WP";
+            } else if (23 <= BMI && BMI < 28) {
+                opis = "NaW";
+            } else if (28 <= BMI && BMI < 38) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
             }
-            else if (range<22, 27>::contains(BMI))
-            {
-              desc="Nadwaga";
-              return desc;
+            } else if (wiek >= 18 && wiek < 25) {
+                if (BMI < 19) {
+                opis = "NW";
+            } else if (19 <= BMI && BMI < 24) {
+                opis = "WP";
+            } else if (24 <= BMI && BMI < 29) {
+                opis = "NaW";
+            } else if (29 <= BMI && BMI < 39) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
             }
-            else if (range<27, 37>::contains(BMI))
-            {
-              desc="Otyłość I stopnia";
-              return desc;
+            } else if (wiek >= 25 && wiek < 35) {
+                if (BMI < 20) {
+                opis = "NW";
+            } else if (20 <= BMI && BMI < 25) {
+                opis = "WP";
+            } else if (25 <= BMI && BMI < 30) {
+                opis = "NaW";
+            } else if (30 <= BMI && BMI < 40) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
             }
-            else (range<37, 1000>::contains(BMI))
-            {
-              desc="Otyłość II stopnia";
-              return desc;
+            } else if (wiek >= 35 && wiek < 45) {
+                if (BMI < 21) {
+                opis = "NW";
+            } else if (21 <= BMI && BMI < 26) {
+                opis = "WP";
+            } else if (26 <= BMI && BMI < 31) {
+                opis = "NaW";
+            } else if (31 <= BMI && BMI < 41) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
             }
-        }      
-      if (range<13, 18>::contains(age))
-        {
-          if (range<0, 18>::contains(BMI))
-          {
-            desc="Niedowaga";
-            return desc;
-          }
-          else if (range<18, 23>::contains(BMI))
-          {
-            desc="Waga prawidlowa";
-            return desc;
-          }
-          else if (range<23, 28>::contains(BMI))
-          {
-            desc="Nadwaga";
-            return desc;
-          }
-          else if (range<28, 38>::contains(BMI))
-          {
-            desc="Otyłość I stopnia";
-            return desc;
-          }
-          else (range<38, 1000>::contains(BMI))
-          {
-            desc="Otyłość II stopnia";
-            return desc;
-          }
+            } else if (wiek >= 45 && wiek < 55) {
+                if (BMI < 22) {
+                opis = "NW";
+            } else if (22 <= BMI && BMI < 27) {
+                opis = "WP";
+            } else if (27 <= BMI && BMI < 32) {
+                opis = "NaW";
+            } else if (32 <= BMI && BMI < 42) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 55 && wiek < 65) {
+                if (BMI < 23) {
+                opis = "NW";
+            } else if (23 <= BMI && BMI < 28) {
+                opis = "WP";
+            } else if (28 <= BMI && BMI < 33) {
+                opis = "NaW";
+            } else if (33 <= BMI && BMI < 43) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 65) {
+                if (BMI < 24) {
+                opis = "NW";
+            } else if (24 <= BMI && BMI < 29) {
+                opis = "WP";
+            } else if (29 <= BMI && BMI < 34) {
+                opis = "NaW";
+            } else if (34 <= BMI && BMI < 44) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            }
+        } else {
+            if (wiek < 13) {
+                if (BMI < 18) {
+                opis = "NW";
+            } else if (18 <= BMI && BMI < 23) {
+                opis = "WP";
+            } else if (23 <= BMI && BMI < 28) {
+                opis = "NaW";
+            } else if (28 <= BMI && BMI < 38) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 13 && wiek < 18) {
+                 if (BMI < 19) {
+                opis = "NW";
+            } else if (19 <= BMI && BMI < 24) {
+                opis = "WP";
+            } else if (24 <= BMI && BMI < 29) {
+                opis = "NaW";
+            } else if (29 <= BMI && BMI < 39) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 18 && wiek < 25) {
+                if (BMI < 20) {
+                opis = "NW";
+            } else if (20 <= BMI && BMI < 25) {
+                opis = "WP";
+            } else if (25 <= BMI && BMI < 30) {
+                opis = "NaW";
+            } else if (30 <= BMI && BMI < 40) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 25 && wiek < 35) {
+                if (BMI < 21) {
+                opis = "NW";
+            } else if (21 <= BMI && BMI < 26) {
+                opis = "WP";
+            } else if (26 <= BMI && BMI < 31) {
+                opis = "NaW";
+            } else if (31 <= BMI && BMI < 41) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 35 && wiek < 45) {
+                if (BMI < 22) {
+                opis = "NW";
+            } else if (22 <= BMI && BMI < 27) {
+                opis = "WP";
+            } else if (27 <= BMI && BMI < 32) {
+                opis = "NaW";
+            } else if (32 <= BMI && BMI < 42) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 45 && wiek < 55) {
+                if (BMI < 23) {
+                opis = "NW";
+            } else if (23 <= BMI && BMI < 28) {
+                opis = "WP";
+            } else if (28 <= BMI && BMI < 33) {
+                opis = "NaW";
+            } else if (33 <= BMI && BMI < 43) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 55 && wiek < 65) {
+               if (BMI < 24) {
+                opis = "NW";
+            } else if (24 <= BMI && BMI < 29) {
+                opis = "WP";
+            } else if (29 <= BMI && BMI < 34) {
+                opis = "NaW";
+            } else if (34 <= BMI && BMI < 44) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            } else if (wiek >= 65) {
+                if (BMI < 25) {
+                opis = "NW";
+            } else if (25 <= BMI && BMI < 30) {
+                opis = "WP";
+            } else if (30 <= BMI && BMI < 35) {
+                opis = "NaW";
+            } else if (35 <= BMI && BMI < 45) {
+                opis = "OIS";
+            } else{
+                opis = "OIIS";
+            }
+            }
         }
-      if (range<18, 25>::contains(age))
-        {
-          if (range<0, 19>::contains(BMI))
-          {
-            desc="Niedowaga";
-            return desc;
-          }
-          else if (range<19, 24>::contains(BMI))
-          {
-            desc="Waga prawidlowa";
-            return desc;
-          }
-          else if (range<24, 29>::contains(BMI))
-          {
-            desc="Nadwaga";
-            return desc;
-          }
-          else if (range<29, 39>::contains(BMI))
-          {
-            desc="Otyłość I stopnia";
-            return desc;
-          }
-          else (range<39, 1000>::contains(BMI))
-          {
-            desc="Otyłość II stopnia";
-            return desc;
-          }
-        }
-      if (range<25, 35>::contains(age))
-        {
-          if (range<0, 20>::contains(BMI))
-          {
-            desc="Niedowaga";
-            return desc;
-          }
-          else if (range<20, 25>::contains(BMI))
-          {
-            desc="Waga prawidlowa";
-            return desc;
-          }
-          else if (range<25, 30>::contains(BMI))
-          {
-            desc="Nadwaga";
-            return desc;
-          }
-          else if (range<30, 40>::contains(BMI))
-          {
-            desc="Otyłość I stopnia";
-            return desc;
-          }
-          else (range<40, 1000>::contains(BMI))
-          {
-            desc="Otyłość II stopnia";
-            return desc;
-          }
-      }
-      if (range<35, 45>::contains(age))
-        {
-          if (range<0, 21>::contains(BMI))
-          {
-            desc="Niedowaga";
-            return desc;
-          }
-          else if (range<21, 26>::contains(BMI))
-          {
-            desc="Waga prawidlowa";
-            return desc;
-          }
-          else if (range<26, 31>::contains(BMI))
-          {
-            desc="Nadwaga";
-            return desc;
-          }
-          else if (range<31, 41>::contains(BMI))
-          {
-            desc="Otyłość I stopnia";
-            return desc;
-          }
-          else (range<41, 1000>::contains(BMI))
-          {
-            desc="Otyłość II stopnia";
-            return desc;
-          }
-      }
-      if (range<45, 55>::contains(age))
-        {
-          if (range<0, 22>::contains(BMI))
-          {
-            desc="Niedowaga";
-            return desc;
-          }
-          else if (range<22, 27>::contains(BMI))
-          {
-            desc="Waga prawidlowa";
-            return desc;
-          }
-          else if (range<27, 32>::contains(BMI))
-          {
-            desc="Nadwaga";
-            return desc;
-          }
-          else if (range<32, 42>::contains(BMI))
-          {
-            desc="Otyłość I stopnia";
-            return desc;
-          }
-          else (range<42, 1000>::contains(BMI))
-          {
-            desc="Otyłość II stopnia";
-            return desc;
-          }
-      }
-      if (range<55, 65>::contains(age))
-      {
-        if (range<0, 23>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<23, 28>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<28, 33>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<33, 43>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<43, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
-      if (range<65, 1000>::contains(age))
-      {
-        if (range<0, 24>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<24, 29>::contains(BMI))
-        {
-          desc="Waga prawidłowa";
-          return desc;
-        }
-        else if (range<29, 34>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<34, 44>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<44, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
+        return opis.c_str();
     }
-    else
-    {
-      if (range<0, 13>::contains(age))
-      {
-        if (range<0, 18>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<18, 23>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<23, 28>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<28, 38>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<38, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-    }      
-      if (range<13, 18>::contains(age))
-      {
-        if (range<0, 19>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<19, 24>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<24, 29>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<29, 39>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<39, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
-      if (range<18, 25>::contains(age))
-      {
-        if (range<0, 20>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<20, 25>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<25, 30>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<30, 40>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<40, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
-      if (range<25, 35>::contains(age))
-      {
-        if (range<0, 21>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<21, 26>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<26, 31>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<31, 41>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<41, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
-      if (range<35, 45>::contains(age))
-      {
-        if (range<0, 22>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<22, 27>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<27, 32>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<32, 42>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<42, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
-      if (range<45, 55>::contains(age))
-      {
-        if (range<0, 23>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<23, 28>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<28, 33>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<33, 43>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<43, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
-      if (range<55, 65>::contains(age))
-      {
-          if (range<0, 24>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<24, 29>::contains(BMI))
-        {
-          desc="Waga prawidlowa";
-          return desc;
-        }
-        else if (range<29, 34>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<34, 44>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<44, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-      }
-      if (range<65, 1000>::contains(age))
-      {
-        if (range<0, 25>::contains(BMI))
-        {
-          desc="Niedowaga";
-          return desc;
-        }
-        else if (range<25, 30>::contains(BMI))
-        {
-          desc="Waga prawidłowa";
-          return desc;
-        }
-        else if (range<30, 35>::contains(BMI))
-        {
-          desc="Nadwaga";
-          return desc;
-        }
-        else if (range<35, 45>::contains(BMI))
-        {
-          desc="Otyłość I stopnia";
-          return desc;
-        }
-        else (range<45, 1000>::contains(BMI))
-        {
-          desc="Otyłość II stopnia";
-          return desc;
-        }
-    }
-    }       
-  }
 }
-        
-
- 

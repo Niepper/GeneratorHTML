@@ -3,17 +3,17 @@ from pathlib import Path
 
 from flask import Flask, render_template, request, redirect
 
-from backend.handlers.cLibrariesHandler import calcBMI
+from backend.handlers.cLibrariesHandler import calcBMI, getBMICattegory
 from backend.handlers.csvHandler import readCSV, sortPeople
 from backend.handlers.htmlHandler import generateHTML
 
-website = Flask(__name__)
-
 UPLOAD_FOLDER = Path('./frontend/website/exported').absolute()
 REPORT_FOLDER = Path('./frontend/website/templates/reports/').absolute()
+
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
+website = Flask(__name__)
 website.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 website.config['REPORT_FOLDER'] = REPORT_FOLDER
 currFilePath = ""
@@ -22,7 +22,6 @@ currFilePath = ""
 @website.route('/')
 def index():
     files = list(map(lambda x: x.removesuffix(".html"), os.listdir(website.config['REPORT_FOLDER'])))
-
     return render_template("index.html", files=files)
 
 
@@ -39,7 +38,6 @@ def upload():
     if file and file.filename.endswith('.csv'):
         file.save(filePath)
         currFilePath = Path(filePath)
-
         return 'File uploaded successfully'
     else:
         return 'Invalid file format. Only CSV files are allowed.'
@@ -57,13 +55,13 @@ def displayReport(filename):
 def execute():
     global currFilePath
     if request.method == 'POST':
-
         people = readCSV(currFilePath.absolute())
         people = calcBMI(people)
         people = sortPeople(people)
+        people = getBMICattegory(people)
         generatedPath = generateHTML(people, currFilePath)
-
         return redirect(f"/reports/{generatedPath}")
     return 'Something went wrong'
 
-
+if __name__ == '__main__':
+    website.run(debug=True)

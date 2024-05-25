@@ -6,6 +6,8 @@ from backend.classes.person import Person
 
 LIB_PATH = "./backend/cpp/lib/"
 LIB_EXTENSION = {"POSIX": ".so", "WIN": ".dll"}
+BMI_DESCRIPTION_DICT = {"NW": "Niedowaga", "WP": "Waga prawidłowa", "NaW": "Nadwaga", "OIS": "Otyłość I stopnia",
+                        "OIIS": "Otyłość II stopnia"}
 
 
 # Na podstawie systemu operacyjnego użytkownika wybierana jest prawidłowa dynamiczna biblioteka
@@ -40,4 +42,14 @@ def calcBMI(osoby: list[Person]) -> list[Person]:
         calc.argtypes = [ctypes.c_float, ctypes.c_float]
         calc.restype = ctypes.c_float
         i.BMI = round(calc(ctypes.c_float(i.weight), ctypes.c_float(i.height)), 2)
+    return osoby
+
+
+def getBMICattegory(osoby: list[Person]) -> list[Person]:
+    BMICat = loadLib("example").getBMICategory
+    for i in osoby:
+        BMICat.argtypes = [ctypes.c_float, ctypes.c_bool, ctypes.c_int]
+        BMICat.restype = ctypes.c_char_p
+        temp = BMICat(ctypes.c_float(i.BMI), ctypes.c_bool(i.sex), ctypes.c_int(i.age)).decode()
+        i.desc = BMI_DESCRIPTION_DICT[temp]
     return osoby
