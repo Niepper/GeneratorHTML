@@ -17,9 +17,6 @@ struct osoba{
     float BMI;
     std::string opis;
 };
-
-
-
 extern "C"
 {
 
@@ -34,21 +31,6 @@ extern "C"
     }
 
 }
-
-
-
-
-struct osoba{
-string imie;
-string nazwisko;
-bool plec;//true-kobieta, false-mezczyzna
-int wiek;
-float waga;
-float wzrost;
-float BMI;
-string opis;
-};
-
 osoba kalkulator(osoba a)
 {
   a.BMI=(a.waga/(a.wzrost*a.wzrost))*10000;
@@ -254,6 +236,6 @@ extern "C" {
             }            
             }
         }         
-        return category.c_str();
+        return opis.c_str();
     }
 }
