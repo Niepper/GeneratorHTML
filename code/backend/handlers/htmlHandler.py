@@ -70,7 +70,7 @@ def generateHTML(people: list[Person] = None, path=None):
 
     tree = fillTable(people, tree)
 
-    moddified = html.tostring(tree, encoding="utf-8")
+    moddified = str(html.tostring(tree, encoding="unicode"))
     with open(Path(f"./frontend/website/templates/reports/{filename}").absolute(), "w",  encoding="utf-8") as file:
         file.write(moddified)
     return filename
