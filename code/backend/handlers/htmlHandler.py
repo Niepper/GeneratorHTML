@@ -18,7 +18,7 @@ def handleNames(PATH):
 
 
 def loadSkeleton():
-    with open(Path("./backend/skeleton/baseWebsite.html").absolute()) as file:
+    with open(Path("./backend/skeleton/baseWebsite.html").absolute(),  encoding="utf-8") as file:
         f = file.read()
     return f
 
@@ -70,8 +70,8 @@ def generateHTML(people: list[Person] = None, path=None):
 
     tree = fillTable(people, tree)
 
-    moddified = html.tostring(tree, encoding="unicode")
-    with open(Path(f"./frontend/website/templates/reports/{filename}").absolute(), "w") as file:
+    moddified = html.tostring(tree, encoding="utf-8")
+    with open(Path(f"./frontend/website/templates/reports/{filename}").absolute(), "w",  encoding="utf-8") as file:
         file.write(moddified)
     return filename
 

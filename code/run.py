@@ -32,7 +32,7 @@ def folderCheck():
 
 
 def checkDependencies():
-    with open(Path("./requirements.txt").absolute()) as f:
+    with open(Path("./requirements.txt").absolute(), encoding="utf-8") as f:
         a = f.readlines()
     a = map(lambda x: x.split("=")[0], a)
     for dependency in a:

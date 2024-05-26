@@ -19,7 +19,7 @@ def readCSV(file):
     Usage:
     person_list = readCSV('path_to_your_file.csv')
     """
-    with open(file, newline='') as csvFile:
+    with open(file, newline='', encoding="utf-8") as csvFile:
         CSVReader = csv.reader(csvFile, delimiter=',')
         structArray = []
 
