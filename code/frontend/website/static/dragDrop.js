@@ -81,3 +81,10 @@ function uploadFile(file) {
         alert('Error uploading file: ' + error.message);
     });
 }
+
+window.onload = function() {
+
+    if (performance.navigation.type === 2) {
+        location.reload(true);
+    }
+};
