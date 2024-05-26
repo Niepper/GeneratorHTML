@@ -46,7 +46,7 @@ def calcBMI(osoby: list[Person]) -> list[Person]:
 
 
 def getBMICattegory(osoby: list[Person]) -> list[Person]:
-    BMICat = loadLib("example").getBMICategory
+    BMICat = loadLib("BMICalc").getBMICategory
     for i in osoby:
         BMICat.argtypes = [ctypes.c_float, ctypes.c_bool, ctypes.c_int]
         BMICat.restype = ctypes.c_char_p
