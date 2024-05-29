@@ -6,25 +6,38 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Generator Raportów BMI</title>
-    <link rel="stylesheet" href="../static/style.css">
-    <script src="../static/dragDrop.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='dragDrop.js') }}"></script>
 </head>
 <body>
 
-<div id="main">
-    <h1>Raport BMI</h1>
 
-    <div id="drop_zone">
-        <img src="../static/csvFile.svg">
-        <p id="drop_zone_text">Kliknij lub przerzuć plik<br>by wygenerować raport</p>
-        <input type="file" id="file_input" style="display: none;" accept=".csv">
+
+<div id="main">  
+    <div id="box1">
+        <div id="ra">Wcześniejsze raporty:</div>
+            <ul>
+                {% for file in files %}
+                <li><a href="/reports/{{ file }}">{{ file }}</a></li>
+                {% endfor %}
+            </ul>
     </div>
-    <button id="upload_button" disabled>Upload</button>
+    <div id="title">Raport BMI</div>
 </div>
 
 
+<div id="drop_zone">
+	<img src="../static/csvFile.svg">
+    <p id="drop_zone_text">Kliknij lub przerzuć plik<br>by wygenerować raport</p>
+    <input type="file" id="file_input" style="display: none;" accept=".csv">
+ </div>
+ 
+ <div id="button">
+    <form action="{{ url_for('execute') }}" method="post">
+    	<button id="upload_button" type="submit" disabled>Przejdź do raportu</button>
+    </form>
+ </div>
 
-<div id="side"></div>
 
 </body>
 </html>

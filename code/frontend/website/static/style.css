@@ -8,23 +8,69 @@ body{
 }
 
 
-#main{
-    border: 2px solid;
-    border-color: aqua;
-    margin: auto;
-    width: 45%;
-    min-height: 50vh;
+#drop_zone{
+    border: 5px solid #4dda6c;
+    border-radius: 24px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5%;
+    width: 30%;
+    height:auto;
+    min-height: 20vh;
+    text-align: center;
+    clear:both;
+}
+#box1{
+    border: 5px solid #4dda6c;
+    border-radius: 24px;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 15%;
     padding: 10px;
     text-align: center;
+    float:right;
+    height:20%;
+    max-width:40%;
+    display: grid;
+    overflow: clip;
+    content: '';
+    display: table;
+    clear: both;
+    
 }
 
-h1{
-    padding-top: 15px;
-    font-size: 48px;
+#title{
+	float:left;
+    width:40%;
+    font-size: 3vw;
+    color: white;
+    margin-top: 5%;
+    margin-left: 30%;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+#ra{
+    font-size: 2vh;
     color: #fff;
+    
 }
-
-
+ul{
+    padding: 0%;
+    font-size: 1vw;
+    
+}
+li{
+    text-align: left;
+    color: #4dda6c;
+    list-style-type: none;
+}
+a {
+	color: #4dda6c;
+    text-decoration: none;
+    font-size: 1vw;
+}
 
 #csvPicker {
     display: block;
@@ -35,13 +81,48 @@ h1{
     display: none;
 }
 
+#drop_zone_text{
+    color: #4dda6c;
+    font-size: 1vw;
+    padding-bottom: 3%;
+}
 
 label {
     display: block;
-
     background-color: #4caf4f00;
     color: white;
     padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button{
+    background-color: #272727;
+    border: none;
+    color: #8F8F8F;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw; 
+    border: 5px solid #4dda6c;
+    border-radius: 14px;
+    width: 10%;
+    margin-left: 45%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
+
+}
+img{
+    height: 20%;
+  width: 20%;
+  object-fit: cover;
+  margin-top: 5%;
+}
+
+button:hover {
+  background-color: #a6ecb5;
+  cursor:pointer;
 }

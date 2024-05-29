@@ -1,7 +1,5 @@
 import csv
-from backend.classes.person import Person
 
-import csv
 from backend.classes.person import Person
 
 
@@ -21,7 +19,7 @@ def readCSV(file):
     Usage:
     person_list = readCSV('path_to_your_file.csv')
     """
-    with open(file, newline='') as csvFile:
+    with open(file, newline='', encoding="utf-8") as csvFile:
         CSVReader = csv.reader(csvFile, delimiter=',')
         structArray = []
 
@@ -30,7 +28,7 @@ def readCSV(file):
 
         for index, row in enumerate(CSVReader):
             try:
-                structArray.append(Person(row[0], row[1], int(row[2]), bool(row[3]), float(row[4]), float(row[5])))
+                structArray.append(Person(row[0], row[1], int(row[2]), row[3], float(row[4]), float(row[5])))
             except ValueError:
                 continue
 
