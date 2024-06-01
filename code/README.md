@@ -15,4 +15,5 @@ cd ./GeneratorHTML/code
 ```
 lub
 ```shell
-.\run.bat```
+.\run.bat
+```
