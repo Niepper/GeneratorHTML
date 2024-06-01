@@ -107,7 +107,7 @@ button{
     font-size: 1vw; 
     border: 5px solid #4dda6c;
     border-radius: 14px;
-    width: 10%;
+    width: 11%;
     margin-left: 45%;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -116,7 +116,7 @@ button{
     cursor:pointer;
 }
 img{
-    height: 20%;
+  height: 20%;
   width: 20%;
   object-fit: cover;
   margin-top: 5%;
