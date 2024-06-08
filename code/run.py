@@ -6,7 +6,6 @@ import threading
 import time
 import webbrowser
 from pathlib import Path
-from plyer import notification
 
 import venv
 
@@ -19,13 +18,6 @@ def run():
 
 def checkVenv():
     if not os.path.exists(Path("./venv").absolute()):
-        if not isTerm():
-            notification.notify(
-                title="Generator HTML",
-                message="Pobieranie zależności. Proszę czekać.",
-                app_name="GeneratorHTML",
-                timeout=30
-            )
         print("Venv not found.\nPlease Wait...")
         venv.create(Path("./venv").absolute(), with_pip=True)
         checkDependencies()
@@ -68,11 +60,4 @@ if __name__ == "__main__":
     checkVenv()
     stop.set()
     animation.join()
-    if not isTerm():
-        notification.notify(
-            title="Generator HTML",
-            message="Uruchamianie WebUI",
-            app_name="GeneratorHTML",
-            timeout=10
-        )
     run()
