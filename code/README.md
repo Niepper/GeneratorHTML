@@ -9,6 +9,10 @@
 git clone https://github.com/Niepper/GeneratorHTML.git
 cd ./GeneratorHTML/code
 ```
+2. Pobranie zależności:
+```
+pip install -r requirements.txt
+```
 2. Uruchomienie pliku ```run.sh``` (linux) lub ```run.bat``` (windows)
 ```shell
 ./run.sh
