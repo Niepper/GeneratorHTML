@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="making run.py system agnostic">
-      <change afterPath="$PROJECT_DIR$/.vscode/tasks.json" afterDir="false" />
+    <list default="true" id="f6a4e50e-0977-49a6-bcfb-77fb70ba421b" name="Changes" comment="reverted change for one function">
+      <change afterPath="$PROJECT_DIR$/code/frontend/website/exported/BMI CALC LARGE.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/backend/cpp/lib/BMICalc.dll" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/cpp/lib/BMICalc.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/backend/cpp/lib/BMICalc.so" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/cpp/lib/BMICalc.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/backend/cpp/source/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/backend/cpp/source/example.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/cpp/source/example.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/frontend/website/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/code/frontend/website/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/frontend/website/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/frontend/website/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/frontend/website/websiteHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/frontend/website/websiteHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/scripts/buildLibraries.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/code/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +68,7 @@
     &quot;Python tests.Python tests for person.TestPerson.test_init_invalid_sex.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in person.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cLibrariesHandler.executor&quot;: &quot;Run&quot;,
     &quot;Python.csvHandler.executor&quot;: &quot;Run&quot;,
     &quot;Python.flask.executor&quot;: &quot;Run&quot;,
     &quot;Python.flaskBackend.executor&quot;: &quot;Run&quot;,
@@ -105,14 +100,14 @@
       <recent name="$PROJECT_DIR$/code/website/exported" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/backend/cpp/source" />
       <recent name="$PROJECT_DIR$/code/frontend/website/templates" />
       <recent name="$PROJECT_DIR$/code/frontend/website" />
       <recent name="$PROJECT_DIR$/code/backend/odin/lib" />
       <recent name="$PROJECT_DIR$/code/backend/odin/source" />
-      <recent name="$PROJECT_DIR$/code" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.CompileC">
+  <component name="RunManager">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
       <module name="GeneratorHTML" />
       <option name="ENV_FILES" value="" />
@@ -181,7 +176,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
@@ -194,54 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712235442836</updated>
       <workItem from="1715176097261" duration="1488000" />
-    </task>
-    <task id="LOCAL-00011" summary="renamed folder (python -&gt; handlers)">
-      <option name="closed" value="true" />
-      <created>1712265929688</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712265929688</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added .cvs handling with c compatible class">
-      <option name="closed" value="true" />
-      <created>1712390285748</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1712390285748</updated>
-    </task>
-    <task id="LOCAL-00013" summary="changed .csv handling to be c++ ready">
-      <option name="closed" value="true" />
-      <created>1712427023223</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1712427023224</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Beatify code">
-      <option name="closed" value="true" />
-      <created>1712490320573</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1712490320573</updated>
-    </task>
-    <task id="LOCAL-00015" summary="God Give Me mercy">
-      <option name="closed" value="true" />
-      <created>1713197367978</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1713197367978</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Proof of concept c++ implementation of calculating BMI">
-      <option name="closed" value="true" />
-      <created>1713198501346</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1713198501346</updated>
+      <workItem from="1717055498140" duration="27000" />
     </task>
     <task id="LOCAL-00017" summary="Proof of concept c++ implementation of calculating BMI">
       <option name="closed" value="true" />
@@ -587,7 +535,55 @@
       <option name="project" value="LOCAL" />
       <updated>1715954992051</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="sync">
+      <option name="closed" value="true" />
+      <created>1716671348432</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1716671348433</updated>
+    </task>
+    <task id="LOCAL-00061" summary="sync">
+      <option name="closed" value="true" />
+      <created>1716717214867</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1716717214867</updated>
+    </task>
+    <task id="LOCAL-00062" summary="sync">
+      <option name="closed" value="true" />
+      <created>1716717232578</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1716717232579</updated>
+    </task>
+    <task id="LOCAL-00063" summary="sync">
+      <option name="closed" value="true" />
+      <created>1716717361359</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1716717361359</updated>
+    </task>
+    <task id="LOCAL-00064" summary="forced utf-8 encoding on opening files">
+      <option name="closed" value="true" />
+      <created>1716717855914</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1716717855914</updated>
+    </task>
+    <task id="LOCAL-00065" summary="reverted change for one function">
+      <option name="closed" value="true" />
+      <created>1716718139010</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1716718139010</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,9 +614,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Repaired Drag&amp;Drop functionality" />
-    <MESSAGE value="Started work on populating the skeleton" />
-    <MESSAGE value="Finished generating HTML websites" />
     <MESSAGE value="Corrected displayed index in the table" />
     <MESSAGE value="Uploading should work as intended" />
     <MESSAGE value="Adding .gitignore" />
@@ -643,7 +636,10 @@
     <MESSAGE value="Fixed program no running because of no reports folder" />
     <MESSAGE value="Made run.py system agnostic" />
     <MESSAGE value="making run.py system agnostic" />
-    <option name="LAST_COMMIT_MESSAGE" value="making run.py system agnostic" />
+    <MESSAGE value="sync" />
+    <MESSAGE value="forced utf-8 encoding on opening files" />
+    <MESSAGE value="reverted change for one function" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverted change for one function" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

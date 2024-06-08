@@ -1,11 +1,14 @@
+import itertools
 import os
-import shutil
 import subprocess
+import sys
+import threading
+import time
 import webbrowser
-import importlib.util
 from pathlib import Path
+from plyer import notification
+
 import venv
-import importlib
 
 REPORTS_PATH = Path("./frontend/website/templates/reports/").absolute()
 
@@ -16,10 +19,26 @@ def run():
 
 def checkVenv():
     if not os.path.exists(Path("./venv").absolute()):
-        print("Venv not found.")
+        if not isTerm():
+            notification.notify(
+                title="Generator HTML",
+                message="Pobieranie zależności. Proszę czekać.",
+                app_name="GeneratorHTML",
+                timeout=30
+            )
+        print("Venv not found.\nPlease Wait...")
         venv.create(Path("./venv").absolute(), with_pip=True)
         checkDependencies()
         folderCheck()
+
+def loading(stop_event):
+    for char in itertools.cycle('⣾⣽⣻⢿⡿⣟⣯⣷'):
+        if stop_event.is_set():
+            break
+        sys.stdout.write(f'\rLoading... {char}')
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write('\rFinished     \n')
 
 
 def folderCheck():
@@ -28,8 +47,10 @@ def folderCheck():
     except Exception as e:
         pass
 
-
-
+def isTerm():
+    if os.isatty(sys.stdin.fileno()):
+        return True
+    return False
 
 def checkDependencies():
     with open(Path("./requirements.txt").absolute(), encoding="utf-8") as f:
@@ -40,5 +61,18 @@ def checkDependencies():
 
 
 if __name__ == "__main__":
+
+    stop = threading.Event()
+    animation = threading.Thread(target=loading, args=(stop,))
+    animation.start()
     checkVenv()
+    stop.set()
+    animation.join()
+    if not isTerm():
+        notification.notify(
+            title="Generator HTML",
+            message="Uruchamianie WebUI",
+            app_name="GeneratorHTML",
+            timeout=10
+        )
     run()
